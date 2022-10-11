@@ -1,8 +1,38 @@
-# mhm-stack
+
+# MHM-stack 
+
+List
+
+1. Download Ubuntu
+2. Install Docker & Docker-compose
+3. Pull this code
+4. Start the containers
+5. Open Portainer
+
+Step 1.
+
+```
+Open "Microsoft Store on your windows PC" Install "Ubuntu 20.04.5 LTS"
+```
+
+Step 2. (Install docker and docker-compose) 
+ 
+https://docs.docker.com/engine/install/ubuntu/
+
+Step 3. 
+
+https://docs.docker.com/engine/install/ubuntu/
 
 
-Step1 create user & password
-Step2: Install docker "https://docs.docker.com/engine/install/ubuntu/"
-Step3 download docker-compose "https://docs.docker.com/compose/install/linux/"
-Step4: change directory "cd /opt"
-Step5: copy lastest MHM-Stack "git clone https://github.com/gs4162/mhm-stack.git"
+Step 4. Change directory 
+
+```
+cd /opt
+```
+
+
+Step 5.
+
+```
+git clone https://github.com/gs4162/mhm-stack.git
+```
