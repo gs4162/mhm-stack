@@ -1,0 +1,1466 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.11.0
+2 info using node@v16.16.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 1ms
+7 warn config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 3ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:file:/data/.npmrc Completed in 0ms
+11 timing config:load:project Completed in 6ms
+12 timing config:load:file:/usr/src/node-red/.npmrc Completed in 0ms
+13 timing config:load:user Completed in 0ms
+14 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+15 timing config:load:global Completed in 1ms
+16 timing config:load:validate Completed in 1ms
+17 timing config:load:credentials Completed in 1ms
+18 timing config:load:setEnvs Completed in 1ms
+19 timing config:load Completed in 18ms
+20 timing npm:load:configload Completed in 19ms
+21 timing npm:load:mkdirpcache Completed in 1ms
+22 timing npm:load:mkdirplogs Completed in 1ms
+23 verbose title npm install node-red-contrib-opcua-server@1.1.1
+24 verbose argv "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix" "~" "--production" "--engine-strict" "node-red-contrib-opcua-server@1.1.1"
+25 timing npm:load:setTitle Completed in 1ms
+26 timing config:load:flatten Completed in 4ms
+27 timing npm:load:display Completed in 6ms
+28 verbose logfile logs-max:10 dir:/data/.npm/_logs
+29 verbose logfile /data/.npm/_logs/2022-10-10T00_24_03_658Z-debug-0.log
+30 timing npm:load:logFile Completed in 6ms
+31 timing npm:load:timers Completed in 0ms
+32 timing npm:load:configScope Completed in 0ms
+33 timing npm:load Completed in 35ms
+34 timing arborist:ctor Completed in 0ms
+35 silly logfile start cleaning logs, removing 2 files
+36 silly logfile done cleaning log files
+37 timing idealTree:init Completed in 104ms
+38 timing idealTree:userRequests Completed in 2ms
+39 silly idealTree buildDeps
+40 silly fetch manifest node-red-contrib-opcua-server@1.1.1
+41 timing arborist:ctor Completed in 0ms
+42 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-opcua-server 678ms (cache miss)
+43 silly placeDep ROOT node-red-contrib-opcua-server@1.1.1 OK for: node-red-project@0.0.1 want: 1.1.1
+44 silly fetch manifest better-assert@~1.0.2
+45 silly fetch manifest node-opcua@~2.64.1
+46 silly fetch manifest source-map-support@~0.5.21
+47 silly fetch manifest vm2@~3.9.10
+48 http fetch GET 200 https://registry.npmjs.org/better-assert 55ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/source-map-support 120ms (cache miss)
+50 http fetch GET 200 https://registry.npmjs.org/vm2 132ms (cache miss)
+51 http fetch GET 200 https://registry.npmjs.org/node-opcua 1378ms (cache miss)
+52 timing idealTree:#root Completed in 2070ms
+53 silly placeDep ROOT better-assert@1.0.2 OK for: node-red-contrib-opcua-server@1.1.1 want: ~1.0.2
+54 silly placeDep ROOT node-opcua@2.64.1 OK for: node-red-contrib-opcua-server@1.1.1 want: ~2.64.1
+55 silly placeDep ROOT source-map-support@0.5.21 OK for: node-red-contrib-opcua-server@1.1.1 want: ~0.5.21
+56 silly placeDep ROOT vm2@3.9.11 OK for: node-red-contrib-opcua-server@1.1.1 want: ~3.9.10
+57 silly fetch manifest callsite@1.0.0
+58 silly fetch manifest chalk@4.1.2
+59 silly fetch manifest node-opcua-address-space@2.64.1
+60 silly fetch manifest node-opcua-address-space-for-conformance-testing@2.64.1
+61 silly fetch manifest node-opcua-aggregates@2.64.1
+62 silly fetch manifest node-opcua-assert@2.64.1
+63 silly fetch manifest node-opcua-basic-types@2.64.1
+64 silly fetch manifest node-opcua-binary-stream@2.64.1
+65 silly fetch manifest node-opcua-certificate-manager@2.64.1
+66 silly fetch manifest node-opcua-client@2.64.1
+67 silly fetch manifest node-opcua-client-crawler@2.64.1
+68 silly fetch manifest node-opcua-client-proxy@2.64.1
+69 silly fetch manifest node-opcua-common@2.64.1
+70 silly fetch manifest node-opcua-constants@2.64.1
+71 silly fetch manifest node-opcua-crypto@^1.9.0
+72 silly fetch manifest node-opcua-data-access@2.64.1
+73 silly fetch manifest node-opcua-data-model@2.64.1
+74 silly fetch manifest node-opcua-data-value@2.64.1
+75 silly fetch manifest node-opcua-debug@2.64.1
+76 silly fetch manifest node-opcua-enum@2.64.1
+77 silly fetch manifest node-opcua-factory@2.64.1
+78 silly fetch manifest node-opcua-hostname@2.64.1
+79 silly fetch manifest node-opcua-nodeid@2.64.1
+80 silly fetch manifest node-opcua-nodesets@2.64.1
+81 silly fetch manifest node-opcua-numeric-range@2.64.1
+82 silly fetch manifest node-opcua-packet-analyzer@2.64.1
+83 silly fetch manifest node-opcua-secure-channel@2.64.1
+84 silly fetch manifest node-opcua-server@2.64.1
+85 silly fetch manifest node-opcua-server-discovery@2.64.1
+86 silly fetch manifest node-opcua-service-browse@2.64.1
+87 silly fetch manifest node-opcua-service-call@2.64.1
+88 silly fetch manifest node-opcua-service-discovery@2.64.1
+89 silly fetch manifest node-opcua-service-endpoints@2.64.1
+90 silly fetch manifest node-opcua-service-filter@2.64.1
+91 silly fetch manifest node-opcua-service-history@2.64.1
+92 silly fetch manifest node-opcua-service-node-management@2.64.1
+93 silly fetch manifest node-opcua-service-query@2.64.1
+94 silly fetch manifest node-opcua-service-read@2.64.1
+95 silly fetch manifest node-opcua-service-register-node@2.64.1
+96 silly fetch manifest node-opcua-service-secure-channel@2.64.1
+97 silly fetch manifest node-opcua-service-session@2.64.1
+98 silly fetch manifest node-opcua-service-subscription@2.64.1
+99 silly fetch manifest node-opcua-service-translate-browse-path@2.64.1
+100 silly fetch manifest node-opcua-service-write@2.64.1
+101 silly fetch manifest node-opcua-status-code@2.64.1
+102 silly fetch manifest node-opcua-transport@2.64.1
+103 silly fetch manifest node-opcua-types@2.64.1
+104 silly fetch manifest node-opcua-utils@2.64.1
+105 silly fetch manifest node-opcua-variant@2.64.1
+106 silly fetch manifest node-opcua-vendor-diagnostic@2.64.1
+107 silly fetch manifest semver@^7.3.5
+108 silly fetch manifest source-map@^0.6.0
+109 silly fetch manifest acorn@^8.7.0
+110 silly fetch manifest acorn-walk@^8.2.0
+111 http fetch GET 200 https://registry.npmjs.org/callsite 107ms (cache miss)
+112 http fetch GET 200 https://registry.npmjs.org/chalk 107ms (cache miss)
+113 http fetch GET 200 https://registry.npmjs.org/node-opcua-address-space-for-conformance-testing 384ms (cache miss)
+114 http fetch GET 200 https://registry.npmjs.org/node-opcua-constants 406ms (cache miss)
+115 http fetch GET 200 https://registry.npmjs.org/node-opcua-crypto 415ms (cache miss)
+116 http fetch GET 200 https://registry.npmjs.org/node-opcua-data-value 666ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/node-opcua-enum 675ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/node-opcua-client-proxy 1142ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/node-opcua-data-access 1147ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/node-opcua-address-space 1236ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/node-opcua-data-model 1271ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/node-opcua-aggregates 1287ms (cache miss)
+123 http fetch GET 200 https://registry.npmjs.org/node-opcua-certificate-manager 1313ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/node-opcua-common 1315ms (cache miss)
+125 http fetch GET 200 https://registry.npmjs.org/node-opcua-debug 1314ms (cache miss)
+126 http fetch GET 200 https://registry.npmjs.org/node-opcua-client 1407ms (cache miss)
+127 http fetch GET 200 https://registry.npmjs.org/node-opcua-hostname 1468ms (cache miss)
+128 http fetch GET 200 https://registry.npmjs.org/node-opcua-nodeid 1469ms (cache miss)
+129 http fetch GET 200 https://registry.npmjs.org/node-opcua-basic-types 1497ms (cache miss)
+130 http fetch GET 200 https://registry.npmjs.org/node-opcua-nodesets 1491ms (cache miss)
+131 http fetch GET 200 https://registry.npmjs.org/node-opcua-binary-stream 1512ms (cache miss)
+132 http fetch GET 200 https://registry.npmjs.org/node-opcua-assert 1515ms (cache miss)
+133 http fetch GET 200 https://registry.npmjs.org/node-opcua-factory 1553ms (cache miss)
+134 http fetch GET 200 https://registry.npmjs.org/node-opcua-client-crawler 1677ms (cache miss)
+135 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-history 1765ms (cache miss)
+136 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-filter 1768ms (cache miss)
+137 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-session 2034ms (cache miss)
+138 http fetch GET 200 https://registry.npmjs.org/node-opcua-numeric-range 2123ms (cache miss)
+139 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-browse 2281ms (cache miss)
+140 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-secure-channel 2339ms (cache miss)
+141 http fetch GET 200 https://registry.npmjs.org/node-opcua-packet-analyzer 2354ms (cache miss)
+142 http fetch GET 200 https://registry.npmjs.org/node-opcua-secure-channel 2454ms (cache miss)
+143 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-read 2456ms (cache miss)
+144 http fetch GET 200 https://registry.npmjs.org/node-opcua-server-discovery 2484ms (cache miss)
+145 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-discovery 2576ms (cache miss)
+146 http fetch GET 200 https://registry.npmjs.org/node-opcua-status-code 2608ms (cache miss)
+147 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-endpoints 2630ms (cache miss)
+148 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-node-management 2639ms (cache miss)
+149 http fetch GET 200 https://registry.npmjs.org/node-opcua-transport 2648ms (cache miss)
+150 http fetch GET 200 https://registry.npmjs.org/source-map 2655ms (cache miss)
+151 http fetch GET 200 https://registry.npmjs.org/acorn 2682ms (cache miss)
+152 http fetch GET 200 https://registry.npmjs.org/acorn-walk 2685ms (cache miss)
+153 http fetch GET 200 https://registry.npmjs.org/node-opcua-server 2702ms (cache miss)
+154 http fetch GET 200 https://registry.npmjs.org/semver 2697ms (cache updated)
+155 http fetch GET 200 https://registry.npmjs.org/node-opcua-variant 2742ms (cache miss)
+156 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-subscription 2778ms (cache miss)
+157 http fetch GET 200 https://registry.npmjs.org/node-opcua-vendor-diagnostic 2833ms (cache miss)
+158 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-call 2974ms (cache miss)
+159 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-translate-browse-path 3168ms (cache miss)
+160 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-query 3180ms (cache miss)
+161 http fetch GET 200 https://registry.npmjs.org/node-opcua-utils 3361ms (cache miss)
+162 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-write 3443ms (cache miss)
+163 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-register-node 3483ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/node-opcua-types 3583ms (cache miss)
+165 timing idealTree:node_modules/node-red-contrib-opcua-server Completed in 3611ms
+166 silly placeDep ROOT callsite@1.0.0 OK for: better-assert@1.0.2 want: 1.0.0
+167 timing idealTree:node_modules/better-assert Completed in 2ms
+168 timing idealTree:node_modules/callsite Completed in 0ms
+169 silly placeDep ROOT chalk@4.1.2 OK for: node-opcua@2.64.1 want: 4.1.2
+170 silly placeDep ROOT node-opcua-address-space@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+171 silly placeDep ROOT node-opcua-address-space-for-conformance-testing@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+172 silly placeDep ROOT node-opcua-aggregates@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+173 silly placeDep ROOT node-opcua-assert@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+174 silly placeDep ROOT node-opcua-basic-types@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+175 silly placeDep ROOT node-opcua-binary-stream@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+176 silly placeDep ROOT node-opcua-certificate-manager@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+177 silly placeDep ROOT node-opcua-client@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+178 silly placeDep ROOT node-opcua-client-crawler@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+179 silly placeDep ROOT node-opcua-client-proxy@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+180 silly placeDep ROOT node-opcua-common@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+181 silly placeDep ROOT node-opcua-constants@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+182 silly placeDep ROOT node-opcua-crypto@1.11.0 OK for: node-opcua@2.64.1 want: ^1.9.0
+183 silly placeDep ROOT node-opcua-data-access@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+184 silly placeDep ROOT node-opcua-data-model@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+185 silly placeDep ROOT node-opcua-data-value@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+186 silly placeDep ROOT node-opcua-debug@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+187 silly placeDep ROOT node-opcua-enum@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+188 silly placeDep ROOT node-opcua-factory@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+189 silly placeDep ROOT node-opcua-hostname@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+190 silly placeDep ROOT node-opcua-nodeid@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+191 silly placeDep ROOT node-opcua-nodesets@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+192 silly placeDep ROOT node-opcua-numeric-range@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+193 silly placeDep ROOT node-opcua-packet-analyzer@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+194 silly placeDep ROOT node-opcua-secure-channel@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+195 silly placeDep ROOT node-opcua-server@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+196 silly placeDep ROOT node-opcua-server-discovery@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+197 silly placeDep ROOT node-opcua-service-browse@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+198 silly placeDep ROOT node-opcua-service-call@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+199 silly placeDep ROOT node-opcua-service-discovery@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+200 silly placeDep ROOT node-opcua-service-endpoints@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+201 silly placeDep ROOT node-opcua-service-filter@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+202 silly placeDep ROOT node-opcua-service-history@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+203 silly placeDep ROOT node-opcua-service-node-management@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+204 silly placeDep ROOT node-opcua-service-query@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+205 silly placeDep ROOT node-opcua-service-read@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+206 silly placeDep ROOT node-opcua-service-register-node@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+207 silly placeDep ROOT node-opcua-service-secure-channel@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+208 silly placeDep ROOT node-opcua-service-session@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+209 silly placeDep ROOT node-opcua-service-subscription@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+210 silly placeDep ROOT node-opcua-service-translate-browse-path@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+211 silly placeDep ROOT node-opcua-service-write@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+212 silly placeDep ROOT node-opcua-status-code@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+213 silly placeDep ROOT node-opcua-transport@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+214 silly placeDep ROOT node-opcua-types@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+215 silly placeDep ROOT node-opcua-utils@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+216 silly placeDep ROOT node-opcua-variant@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+217 silly placeDep ROOT node-opcua-vendor-diagnostic@2.64.1 OK for: node-opcua@2.64.1 want: 2.64.1
+218 silly placeDep ROOT semver@7.3.8 OK for: node-opcua@2.64.1 want: ^7.3.5
+219 silly fetch manifest ansi-styles@^4.1.0
+220 silly fetch manifest supports-color@^7.1.0
+221 silly fetch manifest @types/lodash@4.14.179
+222 silly fetch manifest dequeue@^1.0.5
+223 silly fetch manifest node-opcua-address-space-base@2.64.1
+224 silly fetch manifest node-opcua-client-dynamic-extension-object@2.64.1
+225 silly fetch manifest node-opcua-date-time@2.64.1
+226 silly fetch manifest node-opcua-nodeset-ua@2.64.1
+227 silly fetch manifest node-opcua-object-registry@2.64.1
+228 silly fetch manifest node-opcua-pseudo-session@2.64.1
+229 silly fetch manifest node-opcua-schemas@2.64.1
+230 silly fetch manifest node-opcua-xml2json@2.64.1
+231 silly fetch manifest set-prototype-of@^1.0.0
+232 silly fetch manifest thenify@^3.3.1
+233 silly fetch manifest xml-writer@^1.7.0
+234 silly fetch manifest @types/async@^3.2.12
+235 silly fetch manifest node-opcua-buffer-utils@2.64.1
+236 silly fetch manifest node-opcua-guid@2.64.1
+237 silly fetch manifest @types/mkdirp@1.0.1
+238 silly fetch manifest delayed@^2.0.0
+239 silly fetch manifest env-paths@2.2.1
+240 silly fetch manifest mkdirp@1.0.4
+241 silly fetch manifest node-opcua-pki@^2.14.0
+242 silly fetch manifest @ster5/global-mutex@^1.2.0
+243 silly fetch manifest @types/once@^1.4.0
+244 silly fetch manifest @types/underscore@^1.11.4
+245 silly fetch manifest callbackify@^1.1.0
+246 silly fetch manifest node-opcua-extension-object@2.64.1
+247 silly fetch manifest underscore@^1.13.2
+248 silly fetch manifest hexy@0.3.4
+249 silly fetch manifest jsrsasign@^10.5.25
+250 silly fetch manifest sshpk@^1.17.0
+251 silly fetch manifest @types/underscore@1.11.4
+252 silly fetch manifest backoff@^2.5.0
+253 silly fetch manifest node-opcua-chunkmanager@2.64.1
+254 silly fetch manifest bonjour@^3.5.0
+255 silly fetch manifest @types/bonjour@^3.5.10
+256 silly fetch manifest node-opcua-packet-assembler@2.64.1
+257 silly fetch manifest node-opcua-generator@2.64.1
+258 silly fetch manifest humanize@0.0.9
+259 http fetch GET 200 https://registry.npmjs.org/supports-color 88ms (cache miss)
+260 http fetch GET 200 https://registry.npmjs.org/ansi-styles 92ms (cache miss)
+261 http fetch GET 200 https://registry.npmjs.org/thenify 85ms (cache miss)
+262 http fetch GET 200 https://registry.npmjs.org/@types%2flodash 99ms (cache miss)
+263 http fetch GET 200 https://registry.npmjs.org/node-opcua-date-time 320ms (cache miss)
+264 http fetch GET 200 https://registry.npmjs.org/set-prototype-of 322ms (cache miss)
+265 http fetch GET 200 https://registry.npmjs.org/xml-writer 327ms (cache miss)
+266 http fetch GET 200 https://registry.npmjs.org/node-opcua-guid 342ms (cache miss)
+267 http fetch GET 200 https://registry.npmjs.org/dequeue 354ms (cache miss)
+268 http fetch GET 200 https://registry.npmjs.org/env-paths 367ms (cache miss)
+269 http fetch GET 200 https://registry.npmjs.org/node-opcua-xml2json 373ms (cache miss)
+270 http fetch GET 200 https://registry.npmjs.org/mkdirp 372ms (cache miss)
+271 http fetch GET 200 https://registry.npmjs.org/node-opcua-object-registry 530ms (cache miss)
+272 http fetch GET 200 https://registry.npmjs.org/@types%2fasync 579ms (cache miss)
+273 http fetch GET 200 https://registry.npmjs.org/node-opcua-buffer-utils 599ms (cache miss)
+274 http fetch GET 200 https://registry.npmjs.org/delayed 602ms (cache miss)
+275 http fetch GET 200 https://registry.npmjs.org/@types%2fmkdirp 633ms (cache miss)
+276 http fetch GET 200 https://registry.npmjs.org/underscore 628ms (cache miss)
+277 http fetch GET 200 https://registry.npmjs.org/callbackify 666ms (cache miss)
+278 http fetch GET 200 https://registry.npmjs.org/backoff 680ms (cache miss)
+279 http fetch GET 200 https://registry.npmjs.org/node-opcua-pseudo-session 711ms (cache miss)
+280 http fetch GET 200 https://registry.npmjs.org/bonjour 733ms (cache miss)
+281 http fetch GET 200 https://registry.npmjs.org/node-opcua-nodeset-ua 750ms (cache miss)
+282 http fetch GET 200 https://registry.npmjs.org/hexy 844ms (cache miss)
+283 http fetch GET 200 https://registry.npmjs.org/@types%2fonce 855ms (cache miss)
+284 http fetch GET 200 https://registry.npmjs.org/jsrsasign 852ms (cache miss)
+285 http fetch GET 200 https://registry.npmjs.org/node-opcua-schemas 883ms (cache miss)
+286 http fetch GET 200 https://registry.npmjs.org/sshpk 900ms (cache revalidated)
+287 http fetch GET 200 https://registry.npmjs.org/node-opcua-address-space-base 930ms (cache miss)
+288 http fetch GET 200 https://registry.npmjs.org/@types%2funderscore 935ms (cache miss)
+289 http fetch GET 200 https://registry.npmjs.org/node-opcua-chunkmanager 932ms (cache miss)
+290 http fetch GET 200 https://registry.npmjs.org/@types%2funderscore 934ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/node-opcua-client-dynamic-extension-object 1021ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/node-opcua-pki 1064ms (cache miss)
+293 http fetch GET 200 https://registry.npmjs.org/humanize 1123ms (cache miss)
+294 http fetch GET 200 https://registry.npmjs.org/@ster5%2fglobal-mutex 1160ms (cache miss)
+295 http fetch GET 200 https://registry.npmjs.org/@types%2fbonjour 1169ms (cache miss)
+296 http fetch GET 200 https://registry.npmjs.org/node-opcua-packet-assembler 1436ms (cache miss)
+297 http fetch GET 200 https://registry.npmjs.org/node-opcua-extension-object 1517ms (cache miss)
+298 http fetch GET 200 https://registry.npmjs.org/node-opcua-generator 1810ms (cache miss)
+299 timing idealTree:node_modules/node-opcua Completed in 1913ms
+300 silly placeDep ROOT ansi-styles@4.3.0 OK for: chalk@4.1.2 want: ^4.1.0
+301 silly placeDep ROOT supports-color@7.2.0 OK for: chalk@4.1.2 want: ^7.1.0
+302 silly fetch manifest color-convert@^2.0.1
+303 silly fetch manifest has-flag@^4.0.0
+304 http fetch GET 200 https://registry.npmjs.org/color-convert 49ms (cache miss)
+305 http fetch GET 200 https://registry.npmjs.org/has-flag 49ms (cache miss)
+306 timing idealTree:node_modules/chalk Completed in 51ms
+307 silly placeDep ROOT color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+308 silly fetch manifest color-name@~1.1.4
+309 http fetch GET 200 https://registry.npmjs.org/color-name 46ms (cache miss)
+310 timing idealTree:node_modules/ansi-styles Completed in 47ms
+311 silly placeDep ROOT color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+312 timing idealTree:node_modules/color-convert Completed in 1ms
+313 timing idealTree:node_modules/color-name Completed in 0ms
+314 silly placeDep ROOT @types/lodash@4.14.179 OK for: node-opcua-address-space@2.64.1 want: 4.14.179
+315 silly placeDep ROOT dequeue@1.0.5 OK for: node-opcua-address-space@2.64.1 want: ^1.0.5
+316 silly placeDep ROOT node-opcua-address-space-base@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+317 silly placeDep ROOT node-opcua-client-dynamic-extension-object@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+318 silly placeDep ROOT node-opcua-date-time@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+319 silly placeDep ROOT node-opcua-nodeset-ua@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+320 silly placeDep ROOT node-opcua-object-registry@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+321 silly placeDep ROOT node-opcua-pseudo-session@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+322 silly placeDep ROOT node-opcua-schemas@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+323 silly placeDep ROOT node-opcua-xml2json@2.64.1 OK for: node-opcua-address-space@2.64.1 want: 2.64.1
+324 silly placeDep ROOT set-prototype-of@1.0.0 OK for: node-opcua-address-space@2.64.1 want: ^1.0.0
+325 silly placeDep ROOT thenify@3.3.1 OK for: node-opcua-address-space@2.64.1 want: ^3.3.1
+326 silly placeDep ROOT xml-writer@1.7.0 OK for: node-opcua-address-space@2.64.1 want: ^1.7.0
+327 silly fetch manifest bomstrip@^0.1.4
+328 silly fetch manifest ltx@^3.0.0
+329 silly fetch manifest any-promise@^1.0.0
+330 http fetch GET 200 https://registry.npmjs.org/any-promise 80ms (cache miss)
+331 http fetch GET 200 https://registry.npmjs.org/ltx 286ms (cache miss)
+332 http fetch GET 200 https://registry.npmjs.org/bomstrip 1010ms (cache miss)
+333 timing idealTree:node_modules/node-opcua-address-space Completed in 1031ms
+334 timing idealTree:node_modules/@types/lodash Completed in 0ms
+335 timing idealTree:node_modules/dequeue Completed in 0ms
+336 timing idealTree:node_modules/node-opcua-address-space-base Completed in 0ms
+337 timing idealTree:node_modules/node-opcua-address-space-for-conformance-testing Completed in 0ms
+338 silly placeDep ROOT @types/async@3.2.15 OK for: node-opcua-aggregates@2.64.1 want: ^3.2.12
+339 timing idealTree:node_modules/node-opcua-aggregates Completed in 2ms
+340 timing idealTree:node_modules/@types/async Completed in 0ms
+341 timing idealTree:node_modules/node-opcua-assert Completed in 0ms
+342 silly placeDep ROOT node-opcua-buffer-utils@2.64.1 OK for: node-opcua-basic-types@2.64.1 want: 2.64.1
+343 silly placeDep ROOT node-opcua-guid@2.64.1 OK for: node-opcua-basic-types@2.64.1 want: 2.64.1
+344 timing idealTree:node_modules/node-opcua-basic-types Completed in 3ms
+345 timing idealTree:node_modules/node-opcua-binary-stream Completed in 0ms
+346 timing idealTree:node_modules/node-opcua-buffer-utils Completed in 0ms
+347 silly placeDep ROOT @types/mkdirp@1.0.1 OK for: node-opcua-certificate-manager@2.64.1 want: 1.0.1
+348 silly placeDep ROOT delayed@2.0.0 OK for: node-opcua-certificate-manager@2.64.1 want: ^2.0.0
+349 silly placeDep ROOT env-paths@2.2.1 OK for: node-opcua-certificate-manager@2.64.1 want: 2.2.1
+350 silly placeDep ROOT mkdirp@1.0.4 OK for: node-opcua-certificate-manager@2.64.1 want: 1.0.4
+351 silly placeDep ROOT node-opcua-pki@2.17.0 OK for: node-opcua-certificate-manager@2.64.1 want: ^2.14.0
+352 silly fetch manifest byline@^5.0.0
+353 silly fetch manifest chokidar@^3.5.3
+354 silly fetch manifest cli-table@^0.3.11
+355 silly fetch manifest progress@^2.0.3
+356 silly fetch manifest wget-improved-2@^3.3.0
+357 silly fetch manifest yargs@17.5.1
+358 silly fetch manifest yauzl@^2.10.0
+359 http fetch GET 200 https://registry.npmjs.org/cli-table 64ms (cache miss)
+360 http fetch GET 200 https://registry.npmjs.org/progress 64ms (cache miss)
+361 http fetch GET 200 https://registry.npmjs.org/chokidar 66ms (cache miss)
+362 http fetch GET 200 https://registry.npmjs.org/byline 78ms (cache miss)
+363 http fetch GET 200 https://registry.npmjs.org/yauzl 74ms (cache miss)
+364 http fetch GET 200 https://registry.npmjs.org/yargs 78ms (cache miss)
+365 http fetch GET 200 https://registry.npmjs.org/wget-improved-2 385ms (cache miss)
+366 timing idealTree:node_modules/node-opcua-certificate-manager Completed in 395ms
+367 timing idealTree:node_modules/@types/mkdirp Completed in 0ms
+368 timing idealTree:node_modules/delayed Completed in 0ms
+369 timing idealTree:node_modules/env-paths Completed in 0ms
+370 timing idealTree:node_modules/mkdirp Completed in 0ms
+371 silly placeDep ROOT @ster5/global-mutex@1.2.0 OK for: node-opcua-client@2.64.1 want: ^1.2.0
+372 silly placeDep ROOT @types/once@1.4.0 OK for: node-opcua-client@2.64.1 want: ^1.4.0
+373 silly placeDep ROOT @types/underscore@1.11.4 OK for: node-opcua-client@2.64.1 want: ^1.11.4
+374 silly placeDep ROOT callbackify@1.1.0 OK for: node-opcua-client@2.64.1 want: ^1.1.0
+375 silly placeDep ROOT node-opcua-extension-object@2.64.1 OK for: node-opcua-client@2.64.1 want: 2.64.1
+376 silly placeDep ROOT underscore@1.13.6 OK for: node-opcua-client@2.64.1 want: ^1.13.2
+377 timing idealTree:node_modules/node-opcua-client Completed in 7ms
+378 timing idealTree:node_modules/@ster5/global-mutex Completed in 0ms
+379 timing idealTree:node_modules/@types/once Completed in 0ms
+380 timing idealTree:node_modules/@types/underscore Completed in 0ms
+381 timing idealTree:node_modules/callbackify Completed in 0ms
+382 timing idealTree:node_modules/node-opcua-client-crawler Completed in 0ms
+383 timing idealTree:node_modules/node-opcua-client-dynamic-extension-object Completed in 0ms
+384 timing idealTree:node_modules/node-opcua-client-proxy Completed in 0ms
+385 timing idealTree:node_modules/node-opcua-common Completed in 0ms
+386 timing idealTree:node_modules/node-opcua-constants Completed in 0ms
+387 silly placeDep ROOT hexy@0.3.4 OK for: node-opcua-crypto@1.11.0 want: 0.3.4
+388 silly placeDep ROOT jsrsasign@10.5.27 OK for: node-opcua-crypto@1.11.0 want: ^10.5.25
+389 silly placeDep ROOT sshpk@1.17.0 OK for: node-opcua-crypto@1.11.0 want: ^1.17.0
+390 silly fetch manifest asn1@~0.2.3
+391 silly fetch manifest assert-plus@^1.0.0
+392 silly fetch manifest dashdash@^1.12.0
+393 silly fetch manifest getpass@^0.1.1
+394 silly fetch manifest safer-buffer@^2.0.2
+395 silly fetch manifest jsbn@~0.1.0
+396 silly fetch manifest tweetnacl@~0.14.0
+397 silly fetch manifest ecc-jsbn@~0.1.1
+398 silly fetch manifest bcrypt-pbkdf@^1.0.0
+399 http fetch GET 200 https://registry.npmjs.org/assert-plus 65ms (cache revalidated)
+400 http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf 64ms (cache revalidated)
+401 http fetch GET 200 https://registry.npmjs.org/tweetnacl 67ms (cache revalidated)
+402 http fetch GET 200 https://registry.npmjs.org/jsbn 71ms (cache revalidated)
+403 http fetch GET 200 https://registry.npmjs.org/safer-buffer 78ms (cache revalidated)
+404 http fetch GET 200 https://registry.npmjs.org/dashdash 80ms (cache revalidated)
+405 http fetch GET 200 https://registry.npmjs.org/asn1 90ms (cache revalidated)
+406 http fetch GET 200 https://registry.npmjs.org/ecc-jsbn 92ms (cache revalidated)
+407 http fetch GET 200 https://registry.npmjs.org/getpass 96ms (cache revalidated)
+408 timing idealTree:node_modules/node-opcua-crypto Completed in 102ms
+409 timing idealTree:node_modules/hexy Completed in 0ms
+410 timing idealTree:node_modules/jsrsasign Completed in 0ms
+411 timing idealTree:node_modules/node-opcua-data-access Completed in 0ms
+412 timing idealTree:node_modules/node-opcua-data-model Completed in 0ms
+413 timing idealTree:node_modules/node-opcua-data-value Completed in 0ms
+414 timing idealTree:node_modules/node-opcua-date-time Completed in 0ms
+415 timing idealTree:node_modules/node-opcua-debug Completed in 0ms
+416 timing idealTree:node_modules/node-opcua-enum Completed in 0ms
+417 timing idealTree:node_modules/node-opcua-extension-object Completed in 0ms
+418 timing idealTree:node_modules/node-opcua-factory Completed in 0ms
+419 timing idealTree:node_modules/node-opcua-guid Completed in 0ms
+420 timing idealTree:node_modules/node-opcua-hostname Completed in 1ms
+421 timing idealTree:node_modules/node-opcua-nodeid Completed in 0ms
+422 timing idealTree:node_modules/node-opcua-nodeset-ua Completed in 0ms
+423 timing idealTree:node_modules/node-opcua-nodesets Completed in 0ms
+424 timing idealTree:node_modules/node-opcua-numeric-range Completed in 0ms
+425 timing idealTree:node_modules/node-opcua-object-registry Completed in 0ms
+426 timing idealTree:node_modules/node-opcua-packet-analyzer Completed in 0ms
+427 silly placeDep ROOT byline@5.0.0 OK for: node-opcua-pki@2.17.0 want: ^5.0.0
+428 silly placeDep ROOT chokidar@3.5.3 OK for: node-opcua-pki@2.17.0 want: ^3.5.3
+429 silly placeDep ROOT cli-table@0.3.11 OK for: node-opcua-pki@2.17.0 want: ^0.3.11
+430 silly placeDep ROOT progress@2.0.3 OK for: node-opcua-pki@2.17.0 want: ^2.0.3
+431 silly placeDep ROOT wget-improved-2@3.3.0 OK for: node-opcua-pki@2.17.0 want: ^3.3.0
+432 silly placeDep ROOT yargs@17.5.1 OK for: node-opcua-pki@2.17.0 want: 17.5.1
+433 silly placeDep ROOT yauzl@2.10.0 OK for: node-opcua-pki@2.17.0 want: ^2.10.0
+434 silly fetch manifest anymatch@~3.1.2
+435 silly fetch manifest braces@~3.0.2
+436 silly fetch manifest glob-parent@~5.1.2
+437 silly fetch manifest is-binary-path@~2.1.0
+438 silly fetch manifest is-glob@~4.0.1
+439 silly fetch manifest normalize-path@~3.0.0
+440 silly fetch manifest readdirp@~3.6.0
+441 silly fetch manifest fsevents@~2.3.2
+442 silly fetch manifest tunnel@0.0.6
+443 silly fetch manifest cliui@^7.0.2
+444 silly fetch manifest escalade@^3.1.1
+445 silly fetch manifest get-caller-file@^2.0.5
+446 silly fetch manifest require-directory@^2.1.1
+447 silly fetch manifest string-width@^4.2.3
+448 silly fetch manifest y18n@^5.0.5
+449 silly fetch manifest yargs-parser@^21.0.0
+450 silly fetch manifest fd-slicer@~1.1.0
+451 silly fetch manifest buffer-crc32@~0.2.3
+452 http fetch GET 200 https://registry.npmjs.org/normalize-path 80ms (cache miss)
+453 http fetch GET 200 https://registry.npmjs.org/cliui 78ms (cache miss)
+454 http fetch GET 200 https://registry.npmjs.org/braces 84ms (cache miss)
+455 http fetch GET 200 https://registry.npmjs.org/anymatch 86ms (cache miss)
+456 http fetch GET 200 https://registry.npmjs.org/escalade 79ms (cache miss)
+457 http fetch GET 200 https://registry.npmjs.org/string-width 78ms (cache miss)
+458 http fetch GET 200 https://registry.npmjs.org/get-caller-file 80ms (cache miss)
+459 http fetch GET 200 https://registry.npmjs.org/fsevents 83ms (cache miss)
+460 http fetch GET 200 https://registry.npmjs.org/yargs-parser 79ms (cache miss)
+461 http fetch GET 200 https://registry.npmjs.org/readdirp 86ms (cache miss)
+462 http fetch GET 200 https://registry.npmjs.org/y18n 80ms (cache miss)
+463 http fetch GET 200 https://registry.npmjs.org/glob-parent 117ms (cache revalidated)
+464 http fetch GET 200 https://registry.npmjs.org/buffer-crc32 112ms (cache miss)
+465 http fetch GET 200 https://registry.npmjs.org/is-glob 121ms (cache revalidated)
+466 http fetch GET 200 https://registry.npmjs.org/tunnel 281ms (cache miss)
+467 http fetch GET 200 https://registry.npmjs.org/fd-slicer 276ms (cache miss)
+468 http fetch GET 200 https://registry.npmjs.org/is-binary-path 284ms (cache miss)
+469 http fetch GET 200 https://registry.npmjs.org/require-directory 279ms (cache miss)
+470 timing idealTree:node_modules/node-opcua-pki Completed in 292ms
+471 timing idealTree:node_modules/byline Completed in 0ms
+472 silly placeDep ROOT anymatch@3.1.2 OK for: chokidar@3.5.3 want: ~3.1.2
+473 silly placeDep ROOT braces@3.0.2 OK for: chokidar@3.5.3 want: ~3.0.2
+474 silly placeDep ROOT fsevents@2.3.2 OK for: chokidar@3.5.3 want: ~2.3.2
+475 silly placeDep node_modules/chokidar glob-parent@5.1.2 OK for: chokidar@3.5.3 want: ~5.1.2
+476 silly placeDep ROOT is-binary-path@2.1.0 OK for: chokidar@3.5.3 want: ~2.1.0
+477 silly placeDep node_modules/chokidar is-glob@4.0.3 OK for: chokidar@3.5.3 want: ~4.0.1
+478 silly placeDep ROOT normalize-path@3.0.0 OK for: chokidar@3.5.3 want: ~3.0.0
+479 silly placeDep ROOT readdirp@3.6.0 OK for: chokidar@3.5.3 want: ~3.6.0
+480 silly fetch manifest picomatch@^2.0.4
+481 silly fetch manifest fill-range@^7.0.1
+482 silly fetch manifest binary-extensions@^2.0.0
+483 silly fetch manifest picomatch@^2.2.1
+484 http fetch GET 200 https://registry.npmjs.org/binary-extensions 60ms (cache miss)
+485 http fetch GET 200 https://registry.npmjs.org/picomatch 61ms (cache miss)
+486 http fetch GET 200 https://registry.npmjs.org/fill-range 62ms (cache miss)
+487 http fetch GET 200 https://registry.npmjs.org/picomatch 64ms (cache miss)
+488 timing idealTree:node_modules/chokidar Completed in 72ms
+489 silly placeDep ROOT picomatch@2.3.1 OK for: anymatch@3.1.2 want: ^2.0.4
+490 timing idealTree:node_modules/anymatch Completed in 1ms
+491 silly placeDep ROOT fill-range@7.0.1 OK for: braces@3.0.2 want: ^7.0.1
+492 silly fetch manifest to-regex-range@^5.0.1
+493 http fetch GET 200 https://registry.npmjs.org/to-regex-range 58ms (cache miss)
+494 timing idealTree:node_modules/braces Completed in 60ms
+495 timing idealTree:node_modules/cli-table Completed in 0ms
+496 silly placeDep ROOT to-regex-range@5.0.1 OK for: fill-range@7.0.1 want: ^5.0.1
+497 silly fetch manifest is-number@^7.0.0
+498 http fetch GET 200 https://registry.npmjs.org/is-number 55ms (cache miss)
+499 timing idealTree:node_modules/fill-range Completed in 58ms
+500 timing idealTree:node_modules/fsevents Completed in 0ms
+501 silly placeDep ROOT binary-extensions@2.2.0 OK for: is-binary-path@2.1.0 want: ^2.0.0
+502 timing idealTree:node_modules/is-binary-path Completed in 1ms
+503 timing idealTree:node_modules/binary-extensions Completed in 0ms
+504 timing idealTree:node_modules/node-opcua-pseudo-session Completed in 1ms
+505 timing idealTree:node_modules/node-opcua-schemas Completed in 0ms
+506 silly placeDep ROOT backoff@2.5.0 OK for: node-opcua-secure-channel@2.64.1 want: ^2.5.0
+507 silly placeDep ROOT node-opcua-chunkmanager@2.64.1 OK for: node-opcua-secure-channel@2.64.1 want: 2.64.1
+508 silly fetch manifest precond@0.2
+509 http fetch GET 200 https://registry.npmjs.org/precond 63ms (cache miss)
+510 timing idealTree:node_modules/node-opcua-secure-channel Completed in 67ms
+511 silly placeDep ROOT precond@0.2.3 OK for: backoff@2.5.0 want: 0.2
+512 timing idealTree:node_modules/backoff Completed in 1ms
+513 silly placeDep ROOT node-opcua-packet-assembler@2.64.1 OK for: node-opcua-chunkmanager@2.64.1 want: 2.64.1
+514 timing idealTree:node_modules/node-opcua-chunkmanager Completed in 1ms
+515 timing idealTree:node_modules/node-opcua-packet-assembler Completed in 0ms
+516 silly placeDep ROOT bonjour@3.5.0 OK for: node-opcua-server@2.64.1 want: ^3.5.0
+517 silly fetch manifest array-flatten@^2.1.0
+518 silly fetch manifest deep-equal@^1.0.1
+519 silly fetch manifest dns-equal@^1.0.0
+520 silly fetch manifest dns-txt@^2.0.2
+521 silly fetch manifest multicast-dns@^6.0.1
+522 silly fetch manifest multicast-dns-service-types@^1.1.0
+523 http fetch GET 200 https://registry.npmjs.org/multicast-dns-service-types 56ms (cache miss)
+524 http fetch GET 200 https://registry.npmjs.org/array-flatten 59ms (cache miss)
+525 http fetch GET 200 https://registry.npmjs.org/dns-txt 57ms (cache miss)
+526 http fetch GET 200 https://registry.npmjs.org/deep-equal 61ms (cache miss)
+527 http fetch GET 200 https://registry.npmjs.org/dns-equal 66ms (cache miss)
+528 http fetch GET 200 https://registry.npmjs.org/multicast-dns 68ms (cache miss)
+529 timing idealTree:node_modules/node-opcua-server Completed in 74ms
+530 silly placeDep ROOT array-flatten@2.1.2 OK for: bonjour@3.5.0 want: ^2.1.0
+531 silly placeDep ROOT deep-equal@1.1.1 OK for: bonjour@3.5.0 want: ^1.0.1
+532 silly placeDep ROOT dns-equal@1.0.0 OK for: bonjour@3.5.0 want: ^1.0.0
+533 silly placeDep ROOT dns-txt@2.0.2 OK for: bonjour@3.5.0 want: ^2.0.2
+534 silly placeDep ROOT multicast-dns@6.2.3 OK for: bonjour@3.5.0 want: ^6.0.1
+535 silly placeDep ROOT multicast-dns-service-types@1.1.0 OK for: bonjour@3.5.0 want: ^1.1.0
+536 silly fetch manifest is-arguments@^1.0.4
+537 silly fetch manifest is-date-object@^1.0.1
+538 silly fetch manifest is-regex@^1.0.4
+539 silly fetch manifest object-is@^1.0.1
+540 silly fetch manifest object-keys@^1.1.1
+541 silly fetch manifest regexp.prototype.flags@^1.2.0
+542 silly fetch manifest buffer-indexof@^1.0.0
+543 silly fetch manifest dns-packet@^1.3.1
+544 silly fetch manifest thunky@^1.0.2
+545 http fetch GET 200 https://registry.npmjs.org/is-date-object 63ms (cache miss)
+546 http fetch GET 200 https://registry.npmjs.org/is-regex 64ms (cache miss)
+547 http fetch GET 200 https://registry.npmjs.org/object-keys 65ms (cache miss)
+548 http fetch GET 200 https://registry.npmjs.org/regexp.prototype.flags 67ms (cache miss)
+549 http fetch GET 200 https://registry.npmjs.org/buffer-indexof 70ms (cache miss)
+550 http fetch GET 200 https://registry.npmjs.org/dns-packet 69ms (cache miss)
+551 http fetch GET 200 https://registry.npmjs.org/is-arguments 73ms (cache miss)
+552 http fetch GET 200 https://registry.npmjs.org/object-is 274ms (cache miss)
+553 http fetch GET 200 https://registry.npmjs.org/thunky 863ms (cache miss)
+554 timing idealTree:node_modules/bonjour Completed in 870ms
+555 timing idealTree:node_modules/array-flatten Completed in 0ms
+556 silly placeDep ROOT is-arguments@1.1.1 OK for: deep-equal@1.1.1 want: ^1.0.4
+557 silly placeDep ROOT is-date-object@1.0.5 OK for: deep-equal@1.1.1 want: ^1.0.1
+558 silly placeDep ROOT is-regex@1.1.4 OK for: deep-equal@1.1.1 want: ^1.0.4
+559 silly placeDep ROOT object-is@1.1.5 OK for: deep-equal@1.1.1 want: ^1.0.1
+560 silly placeDep ROOT object-keys@1.1.1 OK for: deep-equal@1.1.1 want: ^1.1.1
+561 silly placeDep ROOT regexp.prototype.flags@1.4.3 OK for: deep-equal@1.1.1 want: ^1.2.0
+562 silly fetch manifest call-bind@^1.0.2
+563 silly fetch manifest has-tostringtag@^1.0.0
+564 silly fetch manifest define-properties@^1.1.3
+565 silly fetch manifest functions-have-names@^1.2.2
+566 http fetch GET 200 https://registry.npmjs.org/call-bind 49ms (cache miss)
+567 http fetch GET 200 https://registry.npmjs.org/define-properties 61ms (cache miss)
+568 http fetch GET 200 https://registry.npmjs.org/functions-have-names 62ms (cache miss)
+569 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 81ms (cache miss)
+570 timing idealTree:node_modules/deep-equal Completed in 88ms
+571 timing idealTree:node_modules/dns-equal Completed in 0ms
+572 silly placeDep ROOT buffer-indexof@1.1.1 OK for: dns-txt@2.0.2 want: ^1.0.0
+573 timing idealTree:node_modules/dns-txt Completed in 1ms
+574 timing idealTree:node_modules/buffer-indexof Completed in 0ms
+575 silly placeDep ROOT call-bind@1.0.2 OK for: is-arguments@1.1.1 want: ^1.0.2
+576 silly placeDep ROOT has-tostringtag@1.0.0 OK for: is-arguments@1.1.1 want: ^1.0.0
+577 silly fetch manifest function-bind@^1.1.1
+578 silly fetch manifest get-intrinsic@^1.0.2
+579 silly fetch manifest has-symbols@^1.0.2
+580 http fetch GET 200 https://registry.npmjs.org/function-bind 56ms (cache miss)
+581 http fetch GET 200 https://registry.npmjs.org/has-symbols 59ms (cache miss)
+582 http fetch GET 200 https://registry.npmjs.org/get-intrinsic 65ms (cache miss)
+583 timing idealTree:node_modules/is-arguments Completed in 67ms
+584 silly placeDep ROOT function-bind@1.1.1 OK for: call-bind@1.0.2 want: ^1.1.1
+585 silly placeDep ROOT get-intrinsic@1.1.3 OK for: call-bind@1.0.2 want: ^1.0.2
+586 silly fetch manifest has@^1.0.3
+587 silly fetch manifest has-symbols@^1.0.3
+588 http fetch GET 200 https://registry.npmjs.org/has 58ms (cache miss)
+589 timing idealTree:node_modules/call-bind Completed in 60ms
+590 timing idealTree:node_modules/function-bind Completed in 0ms
+591 silly placeDep ROOT has@1.0.3 OK for: get-intrinsic@1.1.3 want: ^1.0.3
+592 silly placeDep ROOT has-symbols@1.0.3 OK for: get-intrinsic@1.1.3 want: ^1.0.3
+593 timing idealTree:node_modules/get-intrinsic Completed in 1ms
+594 timing idealTree:node_modules/has Completed in 0ms
+595 timing idealTree:node_modules/has-symbols Completed in 0ms
+596 timing idealTree:node_modules/has-tostringtag Completed in 0ms
+597 timing idealTree:node_modules/is-date-object Completed in 0ms
+598 timing idealTree:node_modules/is-regex Completed in 0ms
+599 silly placeDep ROOT dns-packet@1.3.4 OK for: multicast-dns@6.2.3 want: ^1.3.1
+600 silly placeDep ROOT thunky@1.1.0 OK for: multicast-dns@6.2.3 want: ^1.0.2
+601 silly fetch manifest ip@^1.1.0
+602 http fetch GET 200 https://registry.npmjs.org/ip 104ms (cache miss)
+603 timing idealTree:node_modules/multicast-dns Completed in 107ms
+604 silly placeDep ROOT ip@1.1.8 OK for: dns-packet@1.3.4 want: ^1.1.0
+605 timing idealTree:node_modules/dns-packet Completed in 1ms
+606 timing idealTree:node_modules/ip Completed in 0ms
+607 timing idealTree:node_modules/multicast-dns-service-types Completed in 0ms
+608 silly placeDep ROOT @types/bonjour@3.5.10 OK for: node-opcua-server-discovery@2.64.1 want: ^3.5.10
+609 timing idealTree:node_modules/node-opcua-server-discovery Completed in 2ms
+610 timing idealTree:node_modules/@types/bonjour Completed in 0ms
+611 timing idealTree:node_modules/node-opcua-service-browse Completed in 0ms
+612 timing idealTree:node_modules/node-opcua-service-call Completed in 0ms
+613 timing idealTree:node_modules/node-opcua-service-discovery Completed in 0ms
+614 timing idealTree:node_modules/node-opcua-service-endpoints Completed in 0ms
+615 timing idealTree:node_modules/node-opcua-service-filter Completed in 0ms
+616 timing idealTree:node_modules/node-opcua-service-history Completed in 0ms
+617 timing idealTree:node_modules/node-opcua-service-node-management Completed in 0ms
+618 timing idealTree:node_modules/node-opcua-service-query Completed in 0ms
+619 timing idealTree:node_modules/node-opcua-service-read Completed in 0ms
+620 timing idealTree:node_modules/node-opcua-service-register-node Completed in 0ms
+621 timing idealTree:node_modules/node-opcua-service-secure-channel Completed in 0ms
+622 timing idealTree:node_modules/node-opcua-service-session Completed in 0ms
+623 timing idealTree:node_modules/node-opcua-service-subscription Completed in 0ms
+624 timing idealTree:node_modules/node-opcua-service-translate-browse-path Completed in 0ms
+625 timing idealTree:node_modules/node-opcua-service-write Completed in 0ms
+626 timing idealTree:node_modules/node-opcua-status-code Completed in 0ms
+627 timing idealTree:node_modules/node-opcua-transport Completed in 0ms
+628 silly placeDep ROOT node-opcua-generator@2.64.1 OK for: node-opcua-types@2.64.1 want: 2.64.1
+629 timing idealTree:node_modules/node-opcua-types Completed in 1ms
+630 timing idealTree:node_modules/node-opcua-generator Completed in 0ms
+631 timing idealTree:node_modules/node-opcua-utils Completed in 0ms
+632 timing idealTree:node_modules/node-opcua-variant Completed in 0ms
+633 silly placeDep ROOT humanize@0.0.9 OK for: node-opcua-vendor-diagnostic@2.64.1 want: 0.0.9
+634 timing idealTree:node_modules/node-opcua-vendor-diagnostic Completed in 1ms
+635 timing idealTree:node_modules/humanize Completed in 0ms
+636 silly placeDep ROOT bomstrip@0.1.4 OK for: node-opcua-xml2json@2.64.1 want: ^0.1.4
+637 silly placeDep ROOT ltx@3.0.0 OK for: node-opcua-xml2json@2.64.1 want: ^3.0.0
+638 timing idealTree:node_modules/node-opcua-xml2json Completed in 1ms
+639 timing idealTree:node_modules/bomstrip Completed in 0ms
+640 timing idealTree:node_modules/ltx Completed in 0ms
+641 timing idealTree:node_modules/normalize-path Completed in 0ms
+642 silly placeDep ROOT define-properties@1.1.4 OK for: object-is@1.1.5 want: ^1.1.3
+643 silly fetch manifest has-property-descriptors@^1.0.0
+644 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 58ms (cache miss)
+645 timing idealTree:node_modules/object-is Completed in 65ms
+646 silly placeDep ROOT has-property-descriptors@1.0.0 OK for: define-properties@1.1.4 want: ^1.0.0
+647 timing idealTree:node_modules/define-properties Completed in 1ms
+648 timing idealTree:node_modules/has-property-descriptors Completed in 0ms
+649 timing idealTree:node_modules/object-keys Completed in 0ms
+650 timing idealTree:node_modules/picomatch Completed in 0ms
+651 timing idealTree:node_modules/precond Completed in 0ms
+652 timing idealTree:node_modules/progress Completed in 0ms
+653 timing idealTree:node_modules/readdirp Completed in 0ms
+654 silly placeDep ROOT functions-have-names@1.2.3 OK for: regexp.prototype.flags@1.4.3 want: ^1.2.2
+655 timing idealTree:node_modules/regexp.prototype.flags Completed in 1ms
+656 timing idealTree:node_modules/functions-have-names Completed in 0ms
+657 timing idealTree:node_modules/semver Completed in 0ms
+658 timing idealTree:node_modules/set-prototype-of Completed in 0ms
+659 silly placeDep ROOT source-map@0.6.1 OK for: source-map-support@0.5.21 want: ^0.6.0
+660 timing idealTree:node_modules/source-map-support Completed in 1ms
+661 timing idealTree:node_modules/source-map Completed in 0ms
+662 silly placeDep ROOT asn1@0.2.6 OK for: sshpk@1.17.0 want: ~0.2.3
+663 silly placeDep ROOT assert-plus@1.0.0 OK for: sshpk@1.17.0 want: ^1.0.0
+664 silly placeDep ROOT bcrypt-pbkdf@1.0.2 OK for: sshpk@1.17.0 want: ^1.0.0
+665 silly placeDep ROOT dashdash@1.14.1 OK for: sshpk@1.17.0 want: ^1.12.0
+666 silly placeDep ROOT ecc-jsbn@0.1.2 OK for: sshpk@1.17.0 want: ~0.1.1
+667 silly placeDep ROOT getpass@0.1.7 OK for: sshpk@1.17.0 want: ^0.1.1
+668 silly placeDep ROOT jsbn@0.1.1 OK for: sshpk@1.17.0 want: ~0.1.0
+669 silly placeDep ROOT safer-buffer@2.1.2 OK for: sshpk@1.17.0 want: ^2.0.2
+670 silly placeDep ROOT tweetnacl@0.14.5 OK for: sshpk@1.17.0 want: ~0.14.0
+671 timing idealTree:node_modules/sshpk Completed in 5ms
+672 timing idealTree:node_modules/asn1 Completed in 0ms
+673 timing idealTree:node_modules/assert-plus Completed in 0ms
+674 timing idealTree:node_modules/bcrypt-pbkdf Completed in 0ms
+675 timing idealTree:node_modules/dashdash Completed in 0ms
+676 timing idealTree:node_modules/ecc-jsbn Completed in 0ms
+677 timing idealTree:node_modules/getpass Completed in 0ms
+678 timing idealTree:node_modules/jsbn Completed in 0ms
+679 timing idealTree:node_modules/safer-buffer Completed in 0ms
+680 silly placeDep ROOT has-flag@4.0.0 OK for: supports-color@7.2.0 want: ^4.0.0
+681 timing idealTree:node_modules/supports-color Completed in 1ms
+682 timing idealTree:node_modules/has-flag Completed in 0ms
+683 silly placeDep ROOT any-promise@1.3.0 OK for: thenify@3.3.1 want: ^1.0.0
+684 timing idealTree:node_modules/thenify Completed in 0ms
+685 timing idealTree:node_modules/any-promise Completed in 0ms
+686 timing idealTree:node_modules/thunky Completed in 0ms
+687 silly placeDep ROOT is-number@7.0.0 OK for: to-regex-range@5.0.1 want: ^7.0.0
+688 timing idealTree:node_modules/to-regex-range Completed in 1ms
+689 timing idealTree:node_modules/is-number Completed in 0ms
+690 timing idealTree:node_modules/tweetnacl Completed in 0ms
+691 timing idealTree:node_modules/underscore Completed in 0ms
+692 silly placeDep ROOT acorn@8.8.0 OK for: vm2@3.9.11 want: ^8.7.0
+693 silly placeDep ROOT acorn-walk@8.2.0 OK for: vm2@3.9.11 want: ^8.2.0
+694 timing idealTree:node_modules/vm2 Completed in 1ms
+695 timing idealTree:node_modules/acorn Completed in 0ms
+696 timing idealTree:node_modules/acorn-walk Completed in 0ms
+697 silly placeDep ROOT tunnel@0.0.6 OK for: wget-improved-2@3.3.0 want: 0.0.6
+698 timing idealTree:node_modules/wget-improved-2 Completed in 1ms
+699 timing idealTree:node_modules/tunnel Completed in 0ms
+700 timing idealTree:node_modules/xml-writer Completed in 0ms
+701 silly placeDep ROOT cliui@7.0.4 OK for: yargs@17.5.1 want: ^7.0.2
+702 silly placeDep ROOT escalade@3.1.1 OK for: yargs@17.5.1 want: ^3.1.1
+703 silly placeDep ROOT get-caller-file@2.0.5 OK for: yargs@17.5.1 want: ^2.0.5
+704 silly placeDep ROOT require-directory@2.1.1 OK for: yargs@17.5.1 want: ^2.1.1
+705 silly placeDep ROOT string-width@4.2.3 OK for: yargs@17.5.1 want: ^4.2.3
+706 silly placeDep ROOT y18n@5.0.8 OK for: yargs@17.5.1 want: ^5.0.5
+707 silly placeDep ROOT yargs-parser@21.1.1 OK for: yargs@17.5.1 want: ^21.0.0
+708 silly fetch manifest strip-ansi@^6.0.0
+709 silly fetch manifest wrap-ansi@^7.0.0
+710 silly fetch manifest emoji-regex@^8.0.0
+711 silly fetch manifest is-fullwidth-code-point@^3.0.0
+712 silly fetch manifest strip-ansi@^6.0.1
+713 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 48ms (cache miss)
+714 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 59ms (cache miss)
+715 http fetch GET 200 https://registry.npmjs.org/strip-ansi 59ms (cache miss)
+716 http fetch GET 200 https://registry.npmjs.org/emoji-regex 72ms (cache miss)
+717 http fetch GET 200 https://registry.npmjs.org/strip-ansi 74ms (cache miss)
+718 timing idealTree:node_modules/yargs Completed in 81ms
+719 silly placeDep ROOT strip-ansi@6.0.1 OK for: cliui@7.0.4 want: ^6.0.0
+720 silly placeDep ROOT wrap-ansi@7.0.0 OK for: cliui@7.0.4 want: ^7.0.0
+721 silly fetch manifest ansi-regex@^5.0.1
+722 http fetch GET 200 https://registry.npmjs.org/ansi-regex 66ms (cache miss)
+723 timing idealTree:node_modules/cliui Completed in 68ms
+724 timing idealTree:node_modules/escalade Completed in 0ms
+725 timing idealTree:node_modules/get-caller-file Completed in 0ms
+726 timing idealTree:node_modules/require-directory Completed in 0ms
+727 silly placeDep ROOT emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+728 silly placeDep ROOT is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+729 timing idealTree:node_modules/string-width Completed in 2ms
+730 timing idealTree:node_modules/emoji-regex Completed in 0ms
+731 timing idealTree:node_modules/is-fullwidth-code-point Completed in 0ms
+732 silly placeDep ROOT ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+733 timing idealTree:node_modules/strip-ansi Completed in 0ms
+734 timing idealTree:node_modules/ansi-regex Completed in 0ms
+735 timing idealTree:node_modules/wrap-ansi Completed in 0ms
+736 timing idealTree:node_modules/y18n Completed in 0ms
+737 timing idealTree:node_modules/yargs-parser Completed in 0ms
+738 silly placeDep ROOT buffer-crc32@0.2.13 OK for: yauzl@2.10.0 want: ~0.2.3
+739 silly placeDep ROOT fd-slicer@1.1.0 OK for: yauzl@2.10.0 want: ~1.1.0
+740 silly fetch manifest pend@~1.2.0
+741 http fetch GET 200 https://registry.npmjs.org/pend 61ms (cache miss)
+742 timing idealTree:node_modules/yauzl Completed in 64ms
+743 timing idealTree:node_modules/buffer-crc32 Completed in 0ms
+744 silly placeDep ROOT pend@1.2.0 OK for: fd-slicer@1.1.0 want: ~1.2.0
+745 timing idealTree:node_modules/fd-slicer Completed in 1ms
+746 timing idealTree:node_modules/pend Completed in 0ms
+747 timing idealTree:node_modules/chokidar/node_modules/glob-parent Completed in 0ms
+748 timing idealTree:node_modules/chokidar/node_modules/is-glob Completed in 0ms
+749 timing idealTree:buildDeps Completed in 11372ms
+750 timing idealTree:fixDepFlags Completed in 12ms
+751 timing idealTree Completed in 11495ms
+752 timing reify:loadTrees Completed in 11495ms
+753 timing reify:diffTrees Completed in 7ms
+754 silly reify moves {}
+755 timing reify:retireShallow Completed in 1ms
+756 timing reify:createSparse Completed in 15ms
+757 timing reify:trashOmits Completed in 0ms
+758 timing reify:loadBundles Completed in 0ms
+759 verbose reify failed optional dependency /data/node_modules/fsevents
+760 silly reify mark deleted [ '/data/node_modules/fsevents' ]
+761 timing reifyNode:node_modules/fsevents Completed in 35ms
+762 silly tarball no local data for pend@https://registry.npmjs.org/pend/-/pend-1.2.0.tgz. Extracting by manifest.
+763 silly tarball no local data for fd-slicer@https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.1.0.tgz. Extracting by manifest.
+764 silly tarball no local data for ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz. Extracting by manifest.
+765 silly tarball no local data for buffer-crc32@https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz. Extracting by manifest.
+766 silly tarball no local data for emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz. Extracting by manifest.
+767 silly tarball no local data for is-fullwidth-code-point@https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz. Extracting by manifest.
+768 silly tarball no local data for strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz. Extracting by manifest.
+769 silly tarball no local data for wrap-ansi@https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz. Extracting by manifest.
+770 silly tarball no local data for yargs-parser@https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.1.1.tgz. Extracting by manifest.
+771 silly tarball no local data for y18n@https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz. Extracting by manifest.
+772 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz. Extracting by manifest.
+773 silly tarball no local data for require-directory@https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz. Extracting by manifest.
+774 silly tarball no local data for get-caller-file@https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz. Extracting by manifest.
+775 silly tarball no local data for escalade@https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz. Extracting by manifest.
+776 silly tarball no local data for cliui@https://registry.npmjs.org/cliui/-/cliui-7.0.4.tgz. Extracting by manifest.
+777 silly tarball no local data for tunnel@https://registry.npmjs.org/tunnel/-/tunnel-0.0.6.tgz. Extracting by manifest.
+778 silly tarball no local data for acorn-walk@https://registry.npmjs.org/acorn-walk/-/acorn-walk-8.2.0.tgz. Extracting by manifest.
+779 silly tarball no local data for acorn@https://registry.npmjs.org/acorn/-/acorn-8.8.0.tgz. Extracting by manifest.
+780 silly tarball no local data for is-number@https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz. Extracting by manifest.
+781 silly tarball no local data for any-promise@https://registry.npmjs.org/any-promise/-/any-promise-1.3.0.tgz. Extracting by manifest.
+782 silly tarball no local data for has-flag@https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz. Extracting by manifest.
+783 silly tarball no local data for source-map@https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz. Extracting by manifest.
+784 silly tarball no local data for functions-have-names@https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz. Extracting by manifest.
+785 silly tarball no local data for has-property-descriptors@https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.0.tgz. Extracting by manifest.
+786 silly tarball no local data for define-properties@https://registry.npmjs.org/define-properties/-/define-properties-1.1.4.tgz. Extracting by manifest.
+787 silly tarball no local data for ltx@https://registry.npmjs.org/ltx/-/ltx-3.0.0.tgz. Extracting by manifest.
+788 silly tarball no local data for bomstrip@https://registry.npmjs.org/bomstrip/-/bomstrip-0.1.4.tgz. Extracting by manifest.
+789 silly tarball no local data for humanize@https://registry.npmjs.org/humanize/-/humanize-0.0.9.tgz. Extracting by manifest.
+790 silly tarball no local data for node-opcua-generator@https://registry.npmjs.org/node-opcua-generator/-/node-opcua-generator-2.64.1.tgz. Extracting by manifest.
+791 silly tarball no local data for @types/bonjour@https://registry.npmjs.org/@types/bonjour/-/bonjour-3.5.10.tgz. Extracting by manifest.
+792 silly tarball no local data for ip@https://registry.npmjs.org/ip/-/ip-1.1.8.tgz. Extracting by manifest.
+793 silly tarball no local data for thunky@https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz. Extracting by manifest.
+794 silly tarball no local data for dns-packet@https://registry.npmjs.org/dns-packet/-/dns-packet-1.3.4.tgz. Extracting by manifest.
+795 silly tarball no local data for has-symbols@https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.3.tgz. Extracting by manifest.
+796 silly tarball no local data for has@https://registry.npmjs.org/has/-/has-1.0.3.tgz. Extracting by manifest.
+797 silly tarball no local data for get-intrinsic@https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.1.3.tgz. Extracting by manifest.
+798 silly tarball no local data for function-bind@https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz. Extracting by manifest.
+799 silly tarball no local data for call-bind@https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz. Extracting by manifest.
+800 silly tarball no local data for has-tostringtag@https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.0.tgz. Extracting by manifest.
+801 silly tarball no local data for buffer-indexof@https://registry.npmjs.org/buffer-indexof/-/buffer-indexof-1.1.1.tgz. Extracting by manifest.
+802 silly tarball no local data for regexp.prototype.flags@https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.4.3.tgz. Extracting by manifest.
+803 silly tarball no local data for object-keys@https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz. Extracting by manifest.
+804 silly tarball no local data for object-is@https://registry.npmjs.org/object-is/-/object-is-1.1.5.tgz. Extracting by manifest.
+805 silly tarball no local data for is-regex@https://registry.npmjs.org/is-regex/-/is-regex-1.1.4.tgz. Extracting by manifest.
+806 silly tarball no local data for is-date-object@https://registry.npmjs.org/is-date-object/-/is-date-object-1.0.5.tgz. Extracting by manifest.
+807 silly tarball no local data for is-arguments@https://registry.npmjs.org/is-arguments/-/is-arguments-1.1.1.tgz. Extracting by manifest.
+808 silly tarball no local data for multicast-dns-service-types@https://registry.npmjs.org/multicast-dns-service-types/-/multicast-dns-service-types-1.1.0.tgz. Extracting by manifest.
+809 silly tarball no local data for multicast-dns@https://registry.npmjs.org/multicast-dns/-/multicast-dns-6.2.3.tgz. Extracting by manifest.
+810 silly tarball no local data for dns-txt@https://registry.npmjs.org/dns-txt/-/dns-txt-2.0.2.tgz. Extracting by manifest.
+811 silly tarball no local data for dns-equal@https://registry.npmjs.org/dns-equal/-/dns-equal-1.0.0.tgz. Extracting by manifest.
+812 silly tarball no local data for deep-equal@https://registry.npmjs.org/deep-equal/-/deep-equal-1.1.1.tgz. Extracting by manifest.
+813 silly tarball no local data for bonjour@https://registry.npmjs.org/bonjour/-/bonjour-3.5.0.tgz. Extracting by manifest.
+814 silly tarball no local data for array-flatten@https://registry.npmjs.org/array-flatten/-/array-flatten-2.1.2.tgz. Extracting by manifest.
+815 silly tarball no local data for precond@https://registry.npmjs.org/precond/-/precond-0.2.3.tgz. Extracting by manifest.
+816 silly tarball no local data for node-opcua-packet-assembler@https://registry.npmjs.org/node-opcua-packet-assembler/-/node-opcua-packet-assembler-2.64.1.tgz. Extracting by manifest.
+817 silly tarball no local data for node-opcua-chunkmanager@https://registry.npmjs.org/node-opcua-chunkmanager/-/node-opcua-chunkmanager-2.64.1.tgz. Extracting by manifest.
+818 silly tarball no local data for backoff@https://registry.npmjs.org/backoff/-/backoff-2.5.0.tgz. Extracting by manifest.
+819 silly tarball no local data for to-regex-range@https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz. Extracting by manifest.
+820 silly tarball no local data for binary-extensions@https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz. Extracting by manifest.
+821 silly tarball no local data for fill-range@https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz. Extracting by manifest.
+822 silly tarball no local data for picomatch@https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz. Extracting by manifest.
+823 silly tarball no local data for readdirp@https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz. Extracting by manifest.
+824 silly tarball no local data for normalize-path@https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz. Extracting by manifest.
+825 silly tarball no local data for braces@https://registry.npmjs.org/braces/-/braces-3.0.2.tgz. Extracting by manifest.
+826 silly tarball no local data for is-binary-path@https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz. Extracting by manifest.
+827 silly tarball no local data for anymatch@https://registry.npmjs.org/anymatch/-/anymatch-3.1.2.tgz. Extracting by manifest.
+828 silly tarball no local data for yauzl@https://registry.npmjs.org/yauzl/-/yauzl-2.10.0.tgz. Extracting by manifest.
+829 silly tarball no local data for yargs@https://registry.npmjs.org/yargs/-/yargs-17.5.1.tgz. Extracting by manifest.
+830 silly tarball no local data for wget-improved-2@https://registry.npmjs.org/wget-improved-2/-/wget-improved-2-3.3.0.tgz. Extracting by manifest.
+831 silly tarball no local data for progress@https://registry.npmjs.org/progress/-/progress-2.0.3.tgz. Extracting by manifest.
+832 silly tarball no local data for cli-table@https://registry.npmjs.org/cli-table/-/cli-table-0.3.11.tgz. Extracting by manifest.
+833 silly tarball no local data for chokidar@https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz. Extracting by manifest.
+834 silly tarball no local data for byline@https://registry.npmjs.org/byline/-/byline-5.0.0.tgz. Extracting by manifest.
+835 silly tarball no local data for jsrsasign@https://registry.npmjs.org/jsrsasign/-/jsrsasign-10.5.27.tgz. Extracting by manifest.
+836 silly tarball no local data for hexy@https://registry.npmjs.org/hexy/-/hexy-0.3.4.tgz. Extracting by manifest.
+837 silly tarball no local data for underscore@https://registry.npmjs.org/underscore/-/underscore-1.13.6.tgz. Extracting by manifest.
+838 silly tarball no local data for node-opcua-extension-object@https://registry.npmjs.org/node-opcua-extension-object/-/node-opcua-extension-object-2.64.1.tgz. Extracting by manifest.
+839 silly tarball no local data for callbackify@https://registry.npmjs.org/callbackify/-/callbackify-1.1.0.tgz. Extracting by manifest.
+840 silly tarball no local data for @types/once@https://registry.npmjs.org/@types/once/-/once-1.4.0.tgz. Extracting by manifest.
+841 silly tarball no local data for @types/underscore@https://registry.npmjs.org/@types/underscore/-/underscore-1.11.4.tgz. Extracting by manifest.
+842 silly tarball no local data for @ster5/global-mutex@https://registry.npmjs.org/@ster5/global-mutex/-/global-mutex-1.2.0.tgz. Extracting by manifest.
+843 silly tarball no local data for node-opcua-pki@https://registry.npmjs.org/node-opcua-pki/-/node-opcua-pki-2.17.0.tgz. Extracting by manifest.
+844 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz. Extracting by manifest.
+845 silly tarball no local data for env-paths@https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz. Extracting by manifest.
+846 silly tarball no local data for delayed@https://registry.npmjs.org/delayed/-/delayed-2.0.0.tgz. Extracting by manifest.
+847 silly tarball no local data for @types/mkdirp@https://registry.npmjs.org/@types/mkdirp/-/mkdirp-1.0.1.tgz. Extracting by manifest.
+848 silly tarball no local data for node-opcua-guid@https://registry.npmjs.org/node-opcua-guid/-/node-opcua-guid-2.64.1.tgz. Extracting by manifest.
+849 silly tarball no local data for node-opcua-buffer-utils@https://registry.npmjs.org/node-opcua-buffer-utils/-/node-opcua-buffer-utils-2.64.1.tgz. Extracting by manifest.
+850 silly tarball no local data for @types/async@https://registry.npmjs.org/@types/async/-/async-3.2.15.tgz. Extracting by manifest.
+851 silly tarball no local data for xml-writer@https://registry.npmjs.org/xml-writer/-/xml-writer-1.7.0.tgz. Extracting by manifest.
+852 silly tarball no local data for set-prototype-of@https://registry.npmjs.org/set-prototype-of/-/set-prototype-of-1.0.0.tgz. Extracting by manifest.
+853 silly tarball no local data for thenify@https://registry.npmjs.org/thenify/-/thenify-3.3.1.tgz. Extracting by manifest.
+854 silly tarball no local data for node-opcua-schemas@https://registry.npmjs.org/node-opcua-schemas/-/node-opcua-schemas-2.64.1.tgz. Extracting by manifest.
+855 silly tarball no local data for node-opcua-xml2json@https://registry.npmjs.org/node-opcua-xml2json/-/node-opcua-xml2json-2.64.1.tgz. Extracting by manifest.
+856 silly tarball no local data for node-opcua-object-registry@https://registry.npmjs.org/node-opcua-object-registry/-/node-opcua-object-registry-2.64.1.tgz. Extracting by manifest.
+857 silly tarball no local data for node-opcua-pseudo-session@https://registry.npmjs.org/node-opcua-pseudo-session/-/node-opcua-pseudo-session-2.64.1.tgz. Extracting by manifest.
+858 silly tarball no local data for node-opcua-date-time@https://registry.npmjs.org/node-opcua-date-time/-/node-opcua-date-time-2.64.1.tgz. Extracting by manifest.
+859 silly tarball no local data for node-opcua-nodeset-ua@https://registry.npmjs.org/node-opcua-nodeset-ua/-/node-opcua-nodeset-ua-2.64.1.tgz. Extracting by manifest.
+860 silly tarball no local data for node-opcua-address-space-base@https://registry.npmjs.org/node-opcua-address-space-base/-/node-opcua-address-space-base-2.64.1.tgz. Extracting by manifest.
+861 silly tarball no local data for node-opcua-client-dynamic-extension-object@https://registry.npmjs.org/node-opcua-client-dynamic-extension-object/-/node-opcua-client-dynamic-extension-object-2.64.1.tgz. Extracting by manifest.
+862 silly tarball no local data for dequeue@https://registry.npmjs.org/dequeue/-/dequeue-1.0.5.tgz. Extracting by manifest.
+863 silly tarball no local data for @types/lodash@https://registry.npmjs.org/@types/lodash/-/lodash-4.14.179.tgz. Extracting by manifest.
+864 silly tarball no local data for color-name@https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz. Extracting by manifest.
+865 silly tarball no local data for color-convert@https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz. Extracting by manifest.
+866 silly tarball no local data for supports-color@https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz. Extracting by manifest.
+867 silly tarball no local data for ansi-styles@https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz. Extracting by manifest.
+868 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.3.8.tgz. Extracting by manifest.
+869 silly tarball no local data for node-opcua-vendor-diagnostic@https://registry.npmjs.org/node-opcua-vendor-diagnostic/-/node-opcua-vendor-diagnostic-2.64.1.tgz. Extracting by manifest.
+870 silly tarball no local data for node-opcua-variant@https://registry.npmjs.org/node-opcua-variant/-/node-opcua-variant-2.64.1.tgz. Extracting by manifest.
+871 silly tarball no local data for node-opcua-types@https://registry.npmjs.org/node-opcua-types/-/node-opcua-types-2.64.1.tgz. Extracting by manifest.
+872 silly tarball no local data for node-opcua-utils@https://registry.npmjs.org/node-opcua-utils/-/node-opcua-utils-2.64.1.tgz. Extracting by manifest.
+873 silly tarball no local data for node-opcua-status-code@https://registry.npmjs.org/node-opcua-status-code/-/node-opcua-status-code-2.64.1.tgz. Extracting by manifest.
+874 silly tarball no local data for node-opcua-transport@https://registry.npmjs.org/node-opcua-transport/-/node-opcua-transport-2.64.1.tgz. Extracting by manifest.
+875 silly tarball no local data for node-opcua-service-write@https://registry.npmjs.org/node-opcua-service-write/-/node-opcua-service-write-2.64.1.tgz. Extracting by manifest.
+876 silly tarball no local data for node-opcua-service-translate-browse-path@https://registry.npmjs.org/node-opcua-service-translate-browse-path/-/node-opcua-service-translate-browse-path-2.64.1.tgz. Extracting by manifest.
+877 silly tarball no local data for node-opcua-service-subscription@https://registry.npmjs.org/node-opcua-service-subscription/-/node-opcua-service-subscription-2.64.1.tgz. Extracting by manifest.
+878 silly tarball no local data for node-opcua-service-session@https://registry.npmjs.org/node-opcua-service-session/-/node-opcua-service-session-2.64.1.tgz. Extracting by manifest.
+879 silly tarball no local data for node-opcua-service-secure-channel@https://registry.npmjs.org/node-opcua-service-secure-channel/-/node-opcua-service-secure-channel-2.64.1.tgz. Extracting by manifest.
+880 silly tarball no local data for node-opcua-service-register-node@https://registry.npmjs.org/node-opcua-service-register-node/-/node-opcua-service-register-node-2.64.1.tgz. Extracting by manifest.
+881 silly tarball no local data for node-opcua-service-read@https://registry.npmjs.org/node-opcua-service-read/-/node-opcua-service-read-2.64.1.tgz. Extracting by manifest.
+882 silly tarball no local data for node-opcua-service-query@https://registry.npmjs.org/node-opcua-service-query/-/node-opcua-service-query-2.64.1.tgz. Extracting by manifest.
+883 silly tarball no local data for node-opcua-service-node-management@https://registry.npmjs.org/node-opcua-service-node-management/-/node-opcua-service-node-management-2.64.1.tgz. Extracting by manifest.
+884 silly tarball no local data for node-opcua-service-history@https://registry.npmjs.org/node-opcua-service-history/-/node-opcua-service-history-2.64.1.tgz. Extracting by manifest.
+885 silly tarball no local data for node-opcua-service-filter@https://registry.npmjs.org/node-opcua-service-filter/-/node-opcua-service-filter-2.64.1.tgz. Extracting by manifest.
+886 silly tarball no local data for node-opcua-service-endpoints@https://registry.npmjs.org/node-opcua-service-endpoints/-/node-opcua-service-endpoints-2.64.1.tgz. Extracting by manifest.
+887 silly tarball no local data for node-opcua-service-discovery@https://registry.npmjs.org/node-opcua-service-discovery/-/node-opcua-service-discovery-2.64.1.tgz. Extracting by manifest.
+888 silly tarball no local data for node-opcua-service-call@https://registry.npmjs.org/node-opcua-service-call/-/node-opcua-service-call-2.64.1.tgz. Extracting by manifest.
+889 silly tarball no local data for node-opcua-service-browse@https://registry.npmjs.org/node-opcua-service-browse/-/node-opcua-service-browse-2.64.1.tgz. Extracting by manifest.
+890 silly tarball no local data for node-opcua-server-discovery@https://registry.npmjs.org/node-opcua-server-discovery/-/node-opcua-server-discovery-2.64.1.tgz. Extracting by manifest.
+891 silly tarball no local data for node-opcua-server@https://registry.npmjs.org/node-opcua-server/-/node-opcua-server-2.64.1.tgz. Extracting by manifest.
+892 silly tarball no local data for node-opcua-secure-channel@https://registry.npmjs.org/node-opcua-secure-channel/-/node-opcua-secure-channel-2.64.1.tgz. Extracting by manifest.
+893 silly tarball no local data for node-opcua-packet-analyzer@https://registry.npmjs.org/node-opcua-packet-analyzer/-/node-opcua-packet-analyzer-2.64.1.tgz. Extracting by manifest.
+894 silly tarball no local data for node-opcua-numeric-range@https://registry.npmjs.org/node-opcua-numeric-range/-/node-opcua-numeric-range-2.64.1.tgz. Extracting by manifest.
+895 silly tarball no local data for node-opcua-nodesets@https://registry.npmjs.org/node-opcua-nodesets/-/node-opcua-nodesets-2.64.1.tgz. Extracting by manifest.
+896 silly tarball no local data for node-opcua-nodeid@https://registry.npmjs.org/node-opcua-nodeid/-/node-opcua-nodeid-2.64.1.tgz. Extracting by manifest.
+897 silly tarball no local data for node-opcua-hostname@https://registry.npmjs.org/node-opcua-hostname/-/node-opcua-hostname-2.64.1.tgz. Extracting by manifest.
+898 silly tarball no local data for node-opcua-factory@https://registry.npmjs.org/node-opcua-factory/-/node-opcua-factory-2.64.1.tgz. Extracting by manifest.
+899 silly tarball no local data for node-opcua-enum@https://registry.npmjs.org/node-opcua-enum/-/node-opcua-enum-2.64.1.tgz. Extracting by manifest.
+900 silly tarball no local data for node-opcua-debug@https://registry.npmjs.org/node-opcua-debug/-/node-opcua-debug-2.64.1.tgz. Extracting by manifest.
+901 silly tarball no local data for node-opcua-data-value@https://registry.npmjs.org/node-opcua-data-value/-/node-opcua-data-value-2.64.1.tgz. Extracting by manifest.
+902 silly tarball no local data for node-opcua-data-model@https://registry.npmjs.org/node-opcua-data-model/-/node-opcua-data-model-2.64.1.tgz. Extracting by manifest.
+903 silly tarball no local data for node-opcua-data-access@https://registry.npmjs.org/node-opcua-data-access/-/node-opcua-data-access-2.64.1.tgz. Extracting by manifest.
+904 silly tarball no local data for node-opcua-crypto@https://registry.npmjs.org/node-opcua-crypto/-/node-opcua-crypto-1.11.0.tgz. Extracting by manifest.
+905 silly tarball no local data for node-opcua-constants@https://registry.npmjs.org/node-opcua-constants/-/node-opcua-constants-2.64.1.tgz. Extracting by manifest.
+906 silly tarball no local data for node-opcua-common@https://registry.npmjs.org/node-opcua-common/-/node-opcua-common-2.64.1.tgz. Extracting by manifest.
+907 silly tarball no local data for node-opcua-client-proxy@https://registry.npmjs.org/node-opcua-client-proxy/-/node-opcua-client-proxy-2.64.1.tgz. Extracting by manifest.
+908 silly tarball no local data for node-opcua-client-crawler@https://registry.npmjs.org/node-opcua-client-crawler/-/node-opcua-client-crawler-2.64.1.tgz. Extracting by manifest.
+909 silly tarball no local data for node-opcua-client@https://registry.npmjs.org/node-opcua-client/-/node-opcua-client-2.64.1.tgz. Extracting by manifest.
+910 silly tarball no local data for node-opcua-certificate-manager@https://registry.npmjs.org/node-opcua-certificate-manager/-/node-opcua-certificate-manager-2.64.1.tgz. Extracting by manifest.
+911 silly tarball no local data for node-opcua-binary-stream@https://registry.npmjs.org/node-opcua-binary-stream/-/node-opcua-binary-stream-2.64.1.tgz. Extracting by manifest.
+912 silly tarball no local data for node-opcua-basic-types@https://registry.npmjs.org/node-opcua-basic-types/-/node-opcua-basic-types-2.64.1.tgz. Extracting by manifest.
+913 silly tarball no local data for node-opcua-assert@https://registry.npmjs.org/node-opcua-assert/-/node-opcua-assert-2.64.1.tgz. Extracting by manifest.
+914 silly tarball no local data for node-opcua-aggregates@https://registry.npmjs.org/node-opcua-aggregates/-/node-opcua-aggregates-2.64.1.tgz. Extracting by manifest.
+915 silly tarball no local data for node-opcua-address-space@https://registry.npmjs.org/node-opcua-address-space/-/node-opcua-address-space-2.64.1.tgz. Extracting by manifest.
+916 silly tarball no local data for node-opcua-address-space-for-conformance-testing@https://registry.npmjs.org/node-opcua-address-space-for-conformance-testing/-/node-opcua-address-space-for-conformance-testing-2.64.1.tgz. Extracting by manifest.
+917 silly tarball no local data for chalk@https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz. Extracting by manifest.
+918 silly tarball no local data for callsite@https://registry.npmjs.org/callsite/-/callsite-1.0.0.tgz. Extracting by manifest.
+919 silly tarball no local data for vm2@https://registry.npmjs.org/vm2/-/vm2-3.9.11.tgz. Extracting by manifest.
+920 silly tarball no local data for source-map-support@https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz. Extracting by manifest.
+921 silly tarball no local data for node-opcua@https://registry.npmjs.org/node-opcua/-/node-opcua-2.64.1.tgz. Extracting by manifest.
+922 silly tarball no local data for better-assert@https://registry.npmjs.org/better-assert/-/better-assert-1.0.2.tgz. Extracting by manifest.
+923 silly tarball no local data for node-red-contrib-opcua-server@https://registry.npmjs.org/node-red-contrib-opcua-server/-/node-red-contrib-opcua-server-1.1.1.tgz. Extracting by manifest.
+924 silly tarball no local data for is-glob@https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz. Extracting by manifest.
+925 silly tarball no local data for glob-parent@https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz. Extracting by manifest.
+926 timing reifyNode:node_modules/assert-plus Completed in 914ms
+927 timing reifyNode:node_modules/getpass Completed in 925ms
+928 timing reifyNode:node_modules/bcrypt-pbkdf Completed in 934ms
+929 timing reifyNode:node_modules/safer-buffer Completed in 955ms
+930 timing reifyNode:node_modules/jsbn Completed in 963ms
+931 timing reifyNode:node_modules/ecc-jsbn Completed in 972ms
+932 http fetch GET 200 https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz 887ms (cache miss)
+933 timing reifyNode:node_modules/emoji-regex Completed in 985ms
+934 http fetch GET 200 https://registry.npmjs.org/cliui/-/cliui-7.0.4.tgz 864ms (cache miss)
+935 http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz 898ms (cache miss)
+936 timing reifyNode:node_modules/strip-ansi Completed in 1003ms
+937 http fetch GET 200 https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz 915ms (cache miss)
+938 timing reifyNode:node_modules/buffer-crc32 Completed in 1006ms
+939 http fetch GET 200 https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz 893ms (cache miss)
+940 http fetch GET 200 https://registry.npmjs.org/pend/-/pend-1.2.0.tgz 938ms (cache miss)
+941 timing reifyNode:node_modules/pend Completed in 1017ms
+942 http fetch GET 200 https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz 914ms (cache miss)
+943 timing reifyNode:node_modules/wrap-ansi Completed in 1020ms
+944 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz 921ms (cache miss)
+945 timing reifyNode:node_modules/is-fullwidth-code-point Completed in 1023ms
+946 http fetch GET 200 https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz 893ms (cache miss)
+947 timing reifyNode:node_modules/escalade Completed in 1024ms
+948 http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz 944ms (cache miss)
+949 timing reifyNode:node_modules/ansi-regex Completed in 1032ms
+950 timing reifyNode:node_modules/asn1 Completed in 1031ms
+951 timing reifyNode:node_modules/dashdash Completed in 1038ms
+952 timing reifyNode:node_modules/cliui Completed in 1049ms
+953 timing reifyNode:node_modules/y18n Completed in 1049ms
+954 http fetch GET 200 https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.1.0.tgz 981ms (cache miss)
+955 timing reifyNode:node_modules/fd-slicer Completed in 1064ms
+956 http fetch GET 200 https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz 938ms (cache miss)
+957 timing reifyNode:node_modules/get-caller-file Completed in 1066ms
+958 http fetch GET 200 https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz 949ms (cache miss)
+959 timing reifyNode:node_modules/require-directory Completed in 1070ms
+960 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz 955ms (cache miss)
+961 timing reifyNode:node_modules/string-width Completed in 1073ms
+962 http fetch GET 200 https://registry.npmjs.org/acorn-walk/-/acorn-walk-8.2.0.tgz 935ms (cache miss)
+963 timing reifyNode:node_modules/acorn-walk Completed in 1077ms
+964 http fetch GET 200 https://registry.npmjs.org/tunnel/-/tunnel-0.0.6.tgz 950ms (cache miss)
+965 http fetch GET 200 https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz 932ms (cache miss)
+966 timing reifyNode:node_modules/has-flag Completed in 1091ms
+967 http fetch GET 200 https://registry.npmjs.org/any-promise/-/any-promise-1.3.0.tgz 940ms (cache miss)
+968 http fetch GET 200 https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz 919ms (cache miss)
+969 http fetch GET 200 https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.0.tgz 926ms (cache miss)
+970 timing reifyNode:node_modules/has-property-descriptors Completed in 1117ms
+971 timing reifyNode:node_modules/functions-have-names Completed in 1153ms
+972 http fetch GET 200 https://registry.npmjs.org/define-properties/-/define-properties-1.1.4.tgz 963ms (cache miss)
+973 timing reifyNode:node_modules/define-properties Completed in 1157ms
+974 http fetch GET 200 https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz 1027ms (cache miss)
+975 timing reifyNode:node_modules/is-number Completed in 1177ms
+976 http fetch GET 200 https://registry.npmjs.org/humanize/-/humanize-0.0.9.tgz 978ms (cache miss)
+977 timing reifyNode:node_modules/humanize Completed in 1186ms
+978 http fetch GET 200 https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.1.1.tgz 1090ms (cache miss)
+979 http fetch GET 200 https://registry.npmjs.org/ip/-/ip-1.1.8.tgz 994ms (cache miss)
+980 timing reifyNode:node_modules/ip Completed in 1209ms
+981 http fetch GET 200 https://registry.npmjs.org/dns-packet/-/dns-packet-1.3.4.tgz 985ms (cache miss)
+982 timing reifyNode:node_modules/dns-packet Completed in 1212ms
+983 timing reifyNode:node_modules/tunnel Completed in 1221ms
+984 http fetch GET 200 https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.3.tgz 993ms (cache miss)
+985 http fetch GET 200 https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz 1000ms (cache miss)
+986 http fetch GET 200 https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.1.3.tgz 1006ms (cache miss)
+987 http fetch GET 200 https://registry.npmjs.org/has/-/has-1.0.3.tgz 1013ms (cache miss)
+988 timing reifyNode:node_modules/has Completed in 1246ms
+989 timing reifyNode:node_modules/yargs-parser Completed in 1258ms
+990 timing reifyNode:node_modules/tweetnacl Completed in 1257ms
+991 http fetch GET 200 https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.0.tgz 1011ms (cache miss)
+992 http fetch GET 200 https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz 1056ms (cache miss)
+993 timing reifyNode:node_modules/thunky Completed in 1275ms
+994 http fetch GET 200 https://registry.npmjs.org/buffer-indexof/-/buffer-indexof-1.1.1.tgz 1026ms (cache miss)
+995 timing reifyNode:node_modules/function-bind Completed in 1287ms
+996 http fetch GET 200 https://registry.npmjs.org/@types/bonjour/-/bonjour-3.5.10.tgz 1082ms (cache miss)
+997 timing reifyNode:node_modules/@types/bonjour Completed in 1291ms
+998 timing reifyNode:node_modules/get-intrinsic Completed in 1291ms
+999 http fetch GET 200 https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.4.3.tgz 1043ms (cache miss)
+1000 http fetch GET 200 https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz 1063ms (cache miss)
+1001 timing reifyNode:node_modules/buffer-indexof Completed in 1306ms
+1002 http fetch GET 200 https://registry.npmjs.org/object-is/-/object-is-1.1.5.tgz 1045ms (cache miss)
+1003 http fetch GET 200 https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz 1050ms (cache miss)
+1004 timing reifyNode:node_modules/call-bind Completed in 1328ms
+1005 http fetch GET 200 https://registry.npmjs.org/is-regex/-/is-regex-1.1.4.tgz 1063ms (cache miss)
+1006 timing reifyNode:node_modules/has-tostringtag Completed in 1341ms
+1007 timing reifyNode:node_modules/is-regex Completed in 1341ms
+1008 http fetch GET 200 https://registry.npmjs.org/is-arguments/-/is-arguments-1.1.1.tgz 1068ms (cache miss)
+1009 http fetch GET 200 https://registry.npmjs.org/multicast-dns/-/multicast-dns-6.2.3.tgz 1060ms (cache miss)
+1010 timing reifyNode:node_modules/multicast-dns Completed in 1348ms
+1011 http fetch GET 200 https://registry.npmjs.org/multicast-dns-service-types/-/multicast-dns-service-types-1.1.0.tgz 1073ms (cache miss)
+1012 timing reifyNode:node_modules/multicast-dns-service-types Completed in 1355ms
+1013 timing reifyNode:node_modules/has-symbols Completed in 1357ms
+1014 http fetch GET 200 https://registry.npmjs.org/dns-equal/-/dns-equal-1.0.0.tgz 1063ms (cache miss)
+1015 timing reifyNode:node_modules/dns-equal Completed in 1364ms
+1016 http fetch GET 200 https://registry.npmjs.org/dns-txt/-/dns-txt-2.0.2.tgz 1078ms (cache miss)
+1017 timing reifyNode:node_modules/dns-txt Completed in 1370ms
+1018 http fetch GET 200 https://registry.npmjs.org/deep-equal/-/deep-equal-1.1.1.tgz 1074ms (cache miss)
+1019 http fetch GET 200 https://registry.npmjs.org/array-flatten/-/array-flatten-2.1.2.tgz 1070ms (cache miss)
+1020 timing reifyNode:node_modules/array-flatten Completed in 1380ms
+1021 http fetch GET 200 https://registry.npmjs.org/precond/-/precond-0.2.3.tgz 1069ms (cache miss)
+1022 timing reifyNode:node_modules/precond Completed in 1383ms
+1023 http fetch GET 200 https://registry.npmjs.org/bonjour/-/bonjour-3.5.0.tgz 1078ms (cache miss)
+1024 timing reifyNode:node_modules/object-keys Completed in 1389ms
+1025 http fetch GET 200 https://registry.npmjs.org/is-date-object/-/is-date-object-1.0.5.tgz 1120ms (cache miss)
+1026 timing reifyNode:node_modules/is-date-object Completed in 1393ms
+1027 http fetch GET 200 https://registry.npmjs.org/backoff/-/backoff-2.5.0.tgz 1073ms (cache miss)
+1028 timing reifyNode:node_modules/is-arguments Completed in 1404ms
+1029 http fetch GET 200 https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz 1076ms (cache miss)
+1030 timing reifyNode:node_modules/fill-range Completed in 1412ms
+1031 http fetch GET 200 https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz 1089ms (cache miss)
+1032 timing reifyNode:node_modules/to-regex-range Completed in 1415ms
+1033 http fetch GET 200 https://registry.npmjs.org/anymatch/-/anymatch-3.1.2.tgz 1066ms (cache miss)
+1034 timing reifyNode:node_modules/anymatch Completed in 1421ms
+1035 http fetch GET 200 https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz 1085ms (cache miss)
+1036 timing reifyNode:node_modules/readdirp Completed in 1424ms
+1037 http fetch GET 200 https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz 1075ms (cache miss)
+1038 timing reifyNode:node_modules/is-binary-path Completed in 1426ms
+1039 http fetch GET 200 https://registry.npmjs.org/braces/-/braces-3.0.2.tgz 1081ms (cache miss)
+1040 timing reifyNode:node_modules/object-is Completed in 1432ms
+1041 timing reifyNode:node_modules/bonjour Completed in 1432ms
+1042 http fetch GET 200 https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz 1094ms (cache miss)
+1043 timing reifyNode:node_modules/normalize-path Completed in 1436ms
+1044 timing reifyNode:node_modules/regexp.prototype.flags Completed in 1436ms
+1045 http fetch GET 200 https://registry.npmjs.org/yauzl/-/yauzl-2.10.0.tgz 1084ms (cache miss)
+1046 timing reifyNode:node_modules/yauzl Completed in 1441ms
+1047 http fetch GET 200 https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz 1113ms (cache miss)
+1048 timing reifyNode:node_modules/binary-extensions Completed in 1445ms
+1049 http fetch GET 200 https://registry.npmjs.org/progress/-/progress-2.0.3.tgz 1078ms (cache miss)
+1050 timing reifyNode:node_modules/progress Completed in 1446ms
+1051 timing reifyNode:node_modules/deep-equal Completed in 1451ms
+1052 http fetch GET 200 https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz 1117ms (cache miss)
+1053 timing reifyNode:node_modules/braces Completed in 1454ms
+1054 http fetch GET 200 https://registry.npmjs.org/bomstrip/-/bomstrip-0.1.4.tgz 1257ms (cache miss)
+1055 timing reifyNode:node_modules/bomstrip Completed in 1456ms
+1056 http fetch GET 200 https://registry.npmjs.org/byline/-/byline-5.0.0.tgz 1081ms (cache miss)
+1057 timing reifyNode:node_modules/byline Completed in 1459ms
+1058 timing reifyNode:node_modules/picomatch Completed in 1465ms
+1059 http fetch GET 200 https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz 1097ms (cache miss)
+1060 timing reifyNode:node_modules/any-promise Completed in 1479ms
+1061 http fetch GET 200 https://registry.npmjs.org/cli-table/-/cli-table-0.3.11.tgz 1107ms (cache miss)
+1062 timing reifyNode:node_modules/cli-table Completed in 1480ms
+1063 timing reifyNode:node_modules/backoff Completed in 1482ms
+1064 timing reifyNode:node_modules/chokidar Completed in 1481ms
+1065 http fetch GET 200 https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz 1066ms (cache miss)
+1066 timing reifyNode:node_modules/env-paths Completed in 1484ms
+1067 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz 1071ms (cache miss)
+1068 http fetch GET 200 https://registry.npmjs.org/node-opcua-chunkmanager/-/node-opcua-chunkmanager-2.64.1.tgz 1171ms (cache miss)
+1069 timing reifyNode:node_modules/mkdirp Completed in 1495ms
+1070 http fetch GET 200 https://registry.npmjs.org/@types/underscore/-/underscore-1.11.4.tgz 1091ms (cache miss)
+1071 http fetch GET 200 https://registry.npmjs.org/@types/mkdirp/-/mkdirp-1.0.1.tgz 1074ms (cache miss)
+1072 timing reifyNode:node_modules/@types/mkdirp Completed in 1502ms
+1073 http fetch GET 200 https://registry.npmjs.org/xml-writer/-/xml-writer-1.7.0.tgz 1063ms (cache miss)
+1074 http fetch GET 200 https://registry.npmjs.org/wget-improved-2/-/wget-improved-2-3.3.0.tgz 1146ms (cache miss)
+1075 timing reifyNode:node_modules/@types/underscore Completed in 1511ms
+1076 http fetch GET 200 https://registry.npmjs.org/acorn/-/acorn-8.8.0.tgz 1370ms (cache miss)
+1077 timing reifyNode:node_modules/acorn Completed in 1516ms
+1078 timing reifyNode:node_modules/wget-improved-2 Completed in 1517ms
+1079 http fetch GET 200 https://registry.npmjs.org/node-opcua-extension-object/-/node-opcua-extension-object-2.64.1.tgz 1129ms (cache miss)
+1080 http fetch GET 200 https://registry.npmjs.org/thenify/-/thenify-3.3.1.tgz 1077ms (cache miss)
+1081 timing reifyNode:node_modules/thenify Completed in 1522ms
+1082 timing reifyNode:node_modules/node-opcua-extension-object Completed in 1526ms
+1083 http fetch GET 200 https://registry.npmjs.org/@types/once/-/once-1.4.0.tgz 1130ms (cache miss)
+1084 timing reifyNode:node_modules/@types/once Completed in 1529ms
+1085 timing reifyNode:node_modules/node-opcua-chunkmanager Completed in 1530ms
+1086 http fetch GET 200 https://registry.npmjs.org/callbackify/-/callbackify-1.1.0.tgz 1137ms (cache miss)
+1087 timing reifyNode:node_modules/callbackify Completed in 1532ms
+1088 timing reifyNode:node_modules/xml-writer Completed in 1533ms
+1089 timing reifyNode:node_modules/sshpk Completed in 1537ms
+1090 http fetch GET 200 https://registry.npmjs.org/delayed/-/delayed-2.0.0.tgz 1128ms (cache miss)
+1091 timing reifyNode:node_modules/delayed Completed in 1553ms
+1092 http fetch GET 200 https://registry.npmjs.org/node-opcua-generator/-/node-opcua-generator-2.64.1.tgz 1355ms (cache miss)
+1093 timing reifyNode:node_modules/node-opcua-generator Completed in 1561ms
+1094 http fetch GET 200 https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz 1393ms (cache miss)
+1095 timing reifyNode:node_modules/source-map Completed in 1566ms
+1096 http fetch GET 200 https://registry.npmjs.org/jsrsasign/-/jsrsasign-10.5.27.tgz 1188ms (cache miss)
+1097 timing reifyNode:node_modules/jsrsasign Completed in 1569ms
+1098 http fetch GET 200 https://registry.npmjs.org/yargs/-/yargs-17.5.1.tgz 1211ms (cache miss)
+1099 timing reifyNode:node_modules/yargs Completed in 1578ms
+1100 http fetch GET 200 https://registry.npmjs.org/@types/async/-/async-3.2.15.tgz 1168ms (cache miss)
+1101 timing reifyNode:node_modules/@types/async Completed in 1607ms
+1102 http fetch GET 200 https://registry.npmjs.org/node-opcua-buffer-utils/-/node-opcua-buffer-utils-2.64.1.tgz 1199ms (cache miss)
+1103 timing reifyNode:node_modules/node-opcua-buffer-utils Completed in 1632ms
+1104 http fetch GET 200 https://registry.npmjs.org/hexy/-/hexy-0.3.4.tgz 1256ms (cache miss)
+1105 timing reifyNode:node_modules/hexy Completed in 1639ms
+1106 http fetch GET 200 https://registry.npmjs.org/underscore/-/underscore-1.13.6.tgz 1267ms (cache miss)
+1107 timing reifyNode:node_modules/underscore Completed in 1659ms
+1108 http fetch GET 200 https://registry.npmjs.org/set-prototype-of/-/set-prototype-of-1.0.0.tgz 1244ms (cache miss)
+1109 timing reifyNode:node_modules/set-prototype-of Completed in 1686ms
+1110 http fetch GET 200 https://registry.npmjs.org/ltx/-/ltx-3.0.0.tgz 1506ms (cache miss)
+1111 timing reifyNode:node_modules/ltx Completed in 1708ms
+1112 http fetch GET 200 https://registry.npmjs.org/node-opcua-schemas/-/node-opcua-schemas-2.64.1.tgz 1269ms (cache miss)
+1113 timing reifyNode:node_modules/node-opcua-schemas Completed in 1723ms
+1114 http fetch GET 200 https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz 1258ms (cache miss)
+1115 timing reifyNode:node_modules/color-name Completed in 1741ms
+1116 http fetch GET 200 https://registry.npmjs.org/node-opcua-object-registry/-/node-opcua-object-registry-2.64.1.tgz 1307ms (cache miss)
+1117 timing reifyNode:node_modules/node-opcua-object-registry Completed in 1764ms
+1118 http fetch GET 200 https://registry.npmjs.org/node-opcua-pseudo-session/-/node-opcua-pseudo-session-2.64.1.tgz 1308ms (cache miss)
+1119 timing reifyNode:node_modules/node-opcua-pseudo-session Completed in 1772ms
+1120 http fetch GET 200 https://registry.npmjs.org/node-opcua-pki/-/node-opcua-pki-2.17.0.tgz 1372ms (cache miss)
+1121 timing reifyNode:node_modules/node-opcua-pki Completed in 1787ms
+1122 http fetch GET 200 https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz 1303ms (cache miss)
+1123 timing reifyNode:node_modules/color-convert Completed in 1789ms
+1124 http fetch GET 200 https://registry.npmjs.org/node-opcua-date-time/-/node-opcua-date-time-2.64.1.tgz 1331ms (cache miss)
+1125 http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz 1310ms (cache miss)
+1126 timing reifyNode:node_modules/supports-color Completed in 1798ms
+1127 timing reifyNode:node_modules/node-opcua-date-time Completed in 1799ms
+1128 http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz 1319ms (cache miss)
+1129 timing reifyNode:node_modules/ansi-styles Completed in 1814ms
+1130 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.3.8.tgz 1325ms (cache miss)
+1131 timing reifyNode:node_modules/semver Completed in 1824ms
+1132 http fetch GET 200 https://registry.npmjs.org/node-opcua-packet-assembler/-/node-opcua-packet-assembler-2.64.1.tgz 1605ms (cache miss)
+1133 timing reifyNode:node_modules/node-opcua-packet-assembler Completed in 1921ms
+1134 http fetch GET 200 https://registry.npmjs.org/@ster5/global-mutex/-/global-mutex-1.2.0.tgz 1548ms (cache miss)
+1135 timing reifyNode:node_modules/@ster5/global-mutex Completed in 1962ms
+1136 http fetch GET 200 https://registry.npmjs.org/node-opcua-xml2json/-/node-opcua-xml2json-2.64.1.tgz 1514ms (cache miss)
+1137 timing reifyNode:node_modules/node-opcua-xml2json Completed in 1969ms
+1138 http fetch GET 200 https://registry.npmjs.org/node-opcua-vendor-diagnostic/-/node-opcua-vendor-diagnostic-2.64.1.tgz 1549ms (cache miss)
+1139 timing reifyNode:node_modules/node-opcua-vendor-diagnostic Completed in 2049ms
+1140 http fetch GET 200 https://registry.npmjs.org/@types/lodash/-/lodash-4.14.179.tgz 1603ms (cache miss)
+1141 timing reifyNode:node_modules/@types/lodash Completed in 2091ms
+1142 http fetch GET 200 https://registry.npmjs.org/node-opcua-utils/-/node-opcua-utils-2.64.1.tgz 1600ms (cache miss)
+1143 timing reifyNode:node_modules/node-opcua-utils Completed in 2110ms
+1144 http fetch GET 200 https://registry.npmjs.org/node-opcua-client-dynamic-extension-object/-/node-opcua-client-dynamic-extension-object-2.64.1.tgz 1661ms (cache miss)
+1145 timing reifyNode:node_modules/node-opcua-client-dynamic-extension-object Completed in 2134ms
+1146 http fetch GET 200 https://registry.npmjs.org/node-opcua-address-space-base/-/node-opcua-address-space-base-2.64.1.tgz 1672ms (cache miss)
+1147 timing reifyNode:node_modules/node-opcua-address-space-base Completed in 2146ms
+1148 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-write/-/node-opcua-service-write-2.64.1.tgz 1676ms (cache miss)
+1149 timing reifyNode:node_modules/node-opcua-service-write Completed in 2192ms
+1150 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-subscription/-/node-opcua-service-subscription-2.64.1.tgz 1724ms (cache miss)
+1151 timing reifyNode:node_modules/node-opcua-service-subscription Completed in 2250ms
+1152 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-translate-browse-path/-/node-opcua-service-translate-browse-path-2.64.1.tgz 1753ms (cache miss)
+1153 timing reifyNode:node_modules/node-opcua-service-translate-browse-path Completed in 2281ms
+1154 http fetch GET 200 https://registry.npmjs.org/node-opcua-guid/-/node-opcua-guid-2.64.1.tgz 1897ms (cache miss)
+1155 timing reifyNode:node_modules/node-opcua-guid Completed in 2326ms
+1156 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-session/-/node-opcua-service-session-2.64.1.tgz 1809ms (cache miss)
+1157 timing reifyNode:node_modules/node-opcua-service-session Completed in 2338ms
+1158 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-secure-channel/-/node-opcua-service-secure-channel-2.64.1.tgz 1815ms (cache miss)
+1159 timing reifyNode:node_modules/node-opcua-service-secure-channel Completed in 2353ms
+1160 http fetch GET 200 https://registry.npmjs.org/node-opcua-status-code/-/node-opcua-status-code-2.64.1.tgz 1849ms (cache miss)
+1161 timing reifyNode:node_modules/node-opcua-status-code Completed in 2361ms
+1162 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-register-node/-/node-opcua-service-register-node-2.64.1.tgz 1854ms (cache miss)
+1163 timing reifyNode:node_modules/node-opcua-service-register-node Completed in 2394ms
+1164 http fetch GET 200 https://registry.npmjs.org/node-opcua-transport/-/node-opcua-transport-2.64.1.tgz 1884ms (cache miss)
+1165 timing reifyNode:node_modules/node-opcua-transport Completed in 2398ms
+1166 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-read/-/node-opcua-service-read-2.64.1.tgz 1880ms (cache miss)
+1167 timing reifyNode:node_modules/node-opcua-service-read Completed in 2422ms
+1168 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-query/-/node-opcua-service-query-2.64.1.tgz 1894ms (cache miss)
+1169 timing reifyNode:node_modules/node-opcua-service-query Completed in 2439ms
+1170 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-node-management/-/node-opcua-service-node-management-2.64.1.tgz 1975ms (cache miss)
+1171 timing reifyNode:node_modules/node-opcua-service-node-management Completed in 2522ms
+1172 http fetch GET 200 https://registry.npmjs.org/dequeue/-/dequeue-1.0.5.tgz 2062ms (cache miss)
+1173 timing reifyNode:node_modules/dequeue Completed in 2537ms
+1174 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-history/-/node-opcua-service-history-2.64.1.tgz 1992ms (cache miss)
+1175 timing reifyNode:node_modules/node-opcua-service-history Completed in 2546ms
+1176 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-endpoints/-/node-opcua-service-endpoints-2.64.1.tgz 2018ms (cache miss)
+1177 timing reifyNode:node_modules/node-opcua-service-endpoints Completed in 2577ms
+1178 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-filter/-/node-opcua-service-filter-2.64.1.tgz 2033ms (cache miss)
+1179 timing reifyNode:node_modules/node-opcua-service-filter Completed in 2590ms
+1180 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-discovery/-/node-opcua-service-discovery-2.64.1.tgz 2056ms (cache miss)
+1181 timing reifyNode:node_modules/node-opcua-service-discovery Completed in 2620ms
+1182 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-browse/-/node-opcua-service-browse-2.64.1.tgz 2061ms (cache miss)
+1183 timing reifyNode:node_modules/node-opcua-service-browse Completed in 2635ms
+1184 http fetch GET 200 https://registry.npmjs.org/node-opcua-server-discovery/-/node-opcua-server-discovery-2.64.1.tgz 2058ms (cache miss)
+1185 timing reifyNode:node_modules/node-opcua-server-discovery Completed in 2639ms
+1186 http fetch GET 200 https://registry.npmjs.org/node-opcua-service-call/-/node-opcua-service-call-2.64.1.tgz 2100ms (cache miss)
+1187 timing reifyNode:node_modules/node-opcua-service-call Completed in 2670ms
+1188 http fetch GET 200 https://registry.npmjs.org/node-opcua-nodeset-ua/-/node-opcua-nodeset-ua-2.64.1.tgz 2226ms (cache miss)
+1189 timing reifyNode:node_modules/node-opcua-nodeset-ua Completed in 2693ms
+1190 http fetch GET 200 https://registry.npmjs.org/node-opcua-packet-analyzer/-/node-opcua-packet-analyzer-2.64.1.tgz 2113ms (cache miss)
+1191 timing reifyNode:node_modules/node-opcua-packet-analyzer Completed in 2717ms
+1192 http fetch GET 200 https://registry.npmjs.org/node-opcua-numeric-range/-/node-opcua-numeric-range-2.64.1.tgz 2217ms (cache miss)
+1193 timing reifyNode:node_modules/node-opcua-numeric-range Completed in 2815ms
+1194 http fetch GET 200 https://registry.npmjs.org/node-opcua-hostname/-/node-opcua-hostname-2.64.1.tgz 2213ms (cache miss)
+1195 timing reifyNode:node_modules/node-opcua-hostname Completed in 2818ms
+1196 http fetch GET 200 https://registry.npmjs.org/node-opcua-nodeid/-/node-opcua-nodeid-2.64.1.tgz 2236ms (cache miss)
+1197 timing reifyNode:node_modules/node-opcua-nodeid Completed in 2840ms
+1198 http fetch GET 200 https://registry.npmjs.org/node-opcua-variant/-/node-opcua-variant-2.64.1.tgz 2342ms (cache miss)
+1199 timing reifyNode:node_modules/node-opcua-variant Completed in 2844ms
+1200 http fetch GET 200 https://registry.npmjs.org/node-opcua-enum/-/node-opcua-enum-2.64.1.tgz 2253ms (cache miss)
+1201 timing reifyNode:node_modules/node-opcua-enum Completed in 2868ms
+1202 http fetch GET 200 https://registry.npmjs.org/node-opcua-debug/-/node-opcua-debug-2.64.1.tgz 2304ms (cache miss)
+1203 timing reifyNode:node_modules/node-opcua-debug Completed in 2930ms
+1204 http fetch GET 200 https://registry.npmjs.org/node-opcua-data-access/-/node-opcua-data-access-2.64.1.tgz 2336ms (cache miss)
+1205 timing reifyNode:node_modules/node-opcua-data-access Completed in 2964ms
+1206 http fetch GET 200 https://registry.npmjs.org/node-opcua-data-value/-/node-opcua-data-value-2.64.1.tgz 2435ms (cache miss)
+1207 timing reifyNode:node_modules/node-opcua-data-value Completed in 3058ms
+1208 http fetch GET 200 https://registry.npmjs.org/node-opcua-factory/-/node-opcua-factory-2.64.1.tgz 2475ms (cache miss)
+1209 timing reifyNode:node_modules/node-opcua-factory Completed in 3089ms
+1210 http fetch GET 200 https://registry.npmjs.org/node-opcua-common/-/node-opcua-common-2.64.1.tgz 2472ms (cache miss)
+1211 timing reifyNode:node_modules/node-opcua-common Completed in 3114ms
+1212 http fetch GET 200 https://registry.npmjs.org/node-opcua-client-crawler/-/node-opcua-client-crawler-2.64.1.tgz 2487ms (cache miss)
+1213 timing reifyNode:node_modules/node-opcua-client-crawler Completed in 3131ms
+1214 http fetch GET 200 https://registry.npmjs.org/node-opcua-data-model/-/node-opcua-data-model-2.64.1.tgz 2514ms (cache miss)
+1215 timing reifyNode:node_modules/node-opcua-data-model Completed in 3139ms
+1216 http fetch GET 200 https://registry.npmjs.org/node-opcua-secure-channel/-/node-opcua-secure-channel-2.64.1.tgz 2578ms (cache miss)
+1217 timing reifyNode:node_modules/node-opcua-secure-channel Completed in 3172ms
+1218 http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz 2536ms (cache miss)
+1219 timing reifyNode:node_modules/chalk Completed in 3213ms
+1220 http fetch GET 200 https://registry.npmjs.org/node-opcua-certificate-manager/-/node-opcua-certificate-manager-2.64.1.tgz 2570ms (cache miss)
+1221 timing reifyNode:node_modules/node-opcua-certificate-manager Completed in 3222ms
+1222 http fetch GET 200 https://registry.npmjs.org/node-opcua-binary-stream/-/node-opcua-binary-stream-2.64.1.tgz 2596ms (cache miss)
+1223 timing reifyNode:node_modules/node-opcua-binary-stream Completed in 3251ms
+1224 http fetch GET 200 https://registry.npmjs.org/callsite/-/callsite-1.0.0.tgz 2585ms (cache miss)
+1225 timing reifyNode:node_modules/callsite Completed in 3265ms
+1226 http fetch GET 200 https://registry.npmjs.org/vm2/-/vm2-3.9.11.tgz 2603ms (cache miss)
+1227 timing reifyNode:node_modules/vm2 Completed in 3288ms
+1228 http fetch GET 200 https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz 2611ms (cache miss)
+1229 timing reifyNode:node_modules/source-map-support Completed in 3298ms
+1230 http fetch GET 200 https://registry.npmjs.org/node-opcua-types/-/node-opcua-types-2.64.1.tgz 2816ms (cache miss)
+1231 timing reifyNode:node_modules/node-opcua-types Completed in 3322ms
+1232 http fetch GET 200 https://registry.npmjs.org/node-opcua-client-proxy/-/node-opcua-client-proxy-2.64.1.tgz 2690ms (cache miss)
+1233 timing reifyNode:node_modules/node-opcua-client-proxy Completed in 3331ms
+1234 http fetch GET 200 https://registry.npmjs.org/better-assert/-/better-assert-1.0.2.tgz 2645ms (cache miss)
+1235 timing reifyNode:node_modules/better-assert Completed in 3337ms
+1236 http fetch GET 200 https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz 2651ms (cache miss)
+1237 timing reifyNode:node_modules/chokidar/node_modules/is-glob Completed in 3356ms
+1238 http fetch GET 200 https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz 2660ms (cache miss)
+1239 timing reifyNode:node_modules/chokidar/node_modules/glob-parent Completed in 3367ms
+1240 http fetch GET 200 https://registry.npmjs.org/node-opcua-assert/-/node-opcua-assert-2.64.1.tgz 2750ms (cache miss)
+1241 timing reifyNode:node_modules/node-opcua-assert Completed in 3409ms
+1242 http fetch GET 200 https://registry.npmjs.org/node-opcua-crypto/-/node-opcua-crypto-1.11.0.tgz 2832ms (cache miss)
+1243 timing reifyNode:node_modules/node-opcua-crypto Completed in 3461ms
+1244 http fetch GET 200 https://registry.npmjs.org/node-opcua-server/-/node-opcua-server-2.64.1.tgz 2936ms (cache miss)
+1245 timing reifyNode:node_modules/node-opcua-server Completed in 3528ms
+1246 http fetch GET 200 https://registry.npmjs.org/node-opcua-basic-types/-/node-opcua-basic-types-2.64.1.tgz 2923ms (cache miss)
+1247 timing reifyNode:node_modules/node-opcua-basic-types Completed in 3581ms
+1248 http fetch GET 200 https://registry.npmjs.org/node-opcua/-/node-opcua-2.64.1.tgz 2897ms (cache miss)
+1249 timing reifyNode:node_modules/node-opcua Completed in 3587ms
+1250 http fetch GET 200 https://registry.npmjs.org/node-opcua-aggregates/-/node-opcua-aggregates-2.64.1.tgz 2929ms (cache miss)
+1251 timing reifyNode:node_modules/node-opcua-aggregates Completed in 3593ms
+1252 http fetch GET 200 https://registry.npmjs.org/node-opcua-client/-/node-opcua-client-2.64.1.tgz 3130ms (cache miss)
+1253 timing reifyNode:node_modules/node-opcua-client Completed in 3782ms
+1254 http fetch GET 200 https://registry.npmjs.org/node-opcua-nodesets/-/node-opcua-nodesets-2.64.1.tgz 3274ms (cache miss)
+1255 timing reifyNode:node_modules/node-opcua-nodesets Completed in 3874ms
+1256 http fetch GET 200 https://registry.npmjs.org/node-opcua-address-space/-/node-opcua-address-space-2.64.1.tgz 3283ms (cache miss)
+1257 timing reifyNode:node_modules/node-opcua-address-space Completed in 3952ms
+1258 http fetch GET 200 https://registry.npmjs.org/node-opcua-constants/-/node-opcua-constants-2.64.1.tgz 3346ms (cache miss)
+1259 timing reifyNode:node_modules/node-opcua-constants Completed in 3978ms
+1260 http fetch GET 200 https://registry.npmjs.org/node-opcua-address-space-for-conformance-testing/-/node-opcua-address-space-for-conformance-testing-2.64.1.tgz 3368ms (cache miss)
+1261 timing reifyNode:node_modules/node-opcua-address-space-for-conformance-testing Completed in 4040ms
+1262 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-opcua-server/-/node-red-contrib-opcua-server-1.1.1.tgz 4113ms (cache miss)
+1263 timing reifyNode:node_modules/node-red-contrib-opcua-server Completed in 4812ms
+1264 timing reify:unpack Completed in 4818ms
+1265 timing reify:unretire Completed in 1ms
+1266 timing build:queue Completed in 4ms
+1267 timing build:link:node_modules/acorn Completed in 6ms
+1268 timing build:link:node_modules/multicast-dns Completed in 6ms
+1269 timing build:link:node_modules/hexy Completed in 6ms
+1270 timing build:link:node_modules/mkdirp Completed in 6ms
+1271 timing build:link:node_modules/semver Completed in 6ms
+1272 timing build:link:node_modules/vm2 Completed in 7ms
+1273 timing build:link:node_modules/sshpk Completed in 7ms
+1274 timing build:link:node_modules/wget-improved-2 Completed in 11ms
+1275 timing build:link:node_modules/node-opcua-pki Completed in 12ms
+1276 timing build:link Completed in 12ms
+1277 info run node-red-contrib-opcua-server@1.1.1 postinstall node_modules/node-red-contrib-opcua-server node ./create_certificates.js demo --dev -s -r ./certificates && node ./supporter.js
+1278 info run node-red-contrib-opcua-server@1.1.1 postinstall { code: 0, signal: null }
+1279 timing build:run:postinstall:node_modules/node-red-contrib-opcua-server Completed in 5456ms
+1280 timing build:run:postinstall Completed in 5457ms
+1281 timing build:deps Completed in 5474ms
+1282 timing build Completed in 5474ms
+1283 timing reify:build Completed in 5474ms
+1284 timing reify:trash Completed in 1ms
+1285 timing reify:save Completed in 109ms
+1286 timing reify Completed in 21978ms
+1287 silly ADD node_modules/pend
+1288 silly ADD node_modules/fd-slicer
+1289 silly ADD node_modules/buffer-crc32
+1290 silly ADD node_modules/ansi-regex
+1291 silly ADD node_modules/is-fullwidth-code-point
+1292 silly ADD node_modules/emoji-regex
+1293 silly ADD node_modules/wrap-ansi
+1294 silly ADD node_modules/strip-ansi
+1295 silly ADD node_modules/yargs-parser
+1296 silly ADD node_modules/y18n
+1297 silly ADD node_modules/string-width
+1298 silly ADD node_modules/require-directory
+1299 silly ADD node_modules/get-caller-file
+1300 silly ADD node_modules/escalade
+1301 silly ADD node_modules/cliui
+1302 silly ADD node_modules/tunnel
+1303 silly ADD node_modules/acorn-walk
+1304 silly ADD node_modules/acorn
+1305 silly ADD node_modules/is-number
+1306 silly ADD node_modules/any-promise
+1307 silly ADD node_modules/has-flag
+1308 silly ADD node_modules/tweetnacl
+1309 silly ADD node_modules/safer-buffer
+1310 silly ADD node_modules/jsbn
+1311 silly ADD node_modules/getpass
+1312 silly ADD node_modules/ecc-jsbn
+1313 silly ADD node_modules/dashdash
+1314 silly ADD node_modules/bcrypt-pbkdf
+1315 silly ADD node_modules/assert-plus
+1316 silly ADD node_modules/asn1
+1317 silly ADD node_modules/source-map
+1318 silly ADD node_modules/functions-have-names
+1319 silly ADD node_modules/has-property-descriptors
+1320 silly ADD node_modules/define-properties
+1321 silly ADD node_modules/ltx
+1322 silly ADD node_modules/bomstrip
+1323 silly ADD node_modules/humanize
+1324 silly ADD node_modules/node-opcua-generator
+1325 silly ADD node_modules/@types/bonjour
+1326 silly ADD node_modules/ip
+1327 silly ADD node_modules/thunky
+1328 silly ADD node_modules/dns-packet
+1329 silly ADD node_modules/has-symbols
+1330 silly ADD node_modules/has
+1331 silly ADD node_modules/get-intrinsic
+1332 silly ADD node_modules/function-bind
+1333 silly ADD node_modules/has-tostringtag
+1334 silly ADD node_modules/call-bind
+1335 silly ADD node_modules/buffer-indexof
+1336 silly ADD node_modules/regexp.prototype.flags
+1337 silly ADD node_modules/object-keys
+1338 silly ADD node_modules/object-is
+1339 silly ADD node_modules/is-regex
+1340 silly ADD node_modules/is-date-object
+1341 silly ADD node_modules/is-arguments
+1342 silly ADD node_modules/multicast-dns-service-types
+1343 silly ADD node_modules/multicast-dns
+1344 silly ADD node_modules/dns-txt
+1345 silly ADD node_modules/dns-equal
+1346 silly ADD node_modules/deep-equal
+1347 silly ADD node_modules/array-flatten
+1348 silly ADD node_modules/bonjour
+1349 silly ADD node_modules/node-opcua-packet-assembler
+1350 silly ADD node_modules/precond
+1351 silly ADD node_modules/node-opcua-chunkmanager
+1352 silly ADD node_modules/backoff
+1353 silly ADD node_modules/binary-extensions
+1354 silly ADD node_modules/to-regex-range
+1355 silly ADD node_modules/fill-range
+1356 silly ADD node_modules/picomatch
+1357 silly ADD node_modules/readdirp
+1358 silly ADD node_modules/normalize-path
+1359 silly ADD node_modules/is-binary-path
+1360 silly ADD
+1361 silly ADD node_modules/braces
+1362 silly ADD node_modules/anymatch
+1363 silly ADD node_modules/yauzl
+1364 silly ADD node_modules/yargs
+1365 silly ADD node_modules/wget-improved-2
+1366 silly ADD node_modules/progress
+1367 silly ADD node_modules/cli-table
+1368 silly ADD node_modules/chokidar
+1369 silly ADD node_modules/chokidar/node_modules/is-glob
+1370 silly ADD node_modules/chokidar/node_modules/glob-parent
+1371 silly ADD node_modules/byline
+1372 silly ADD node_modules/sshpk
+1373 silly ADD node_modules/jsrsasign
+1374 silly ADD node_modules/hexy
+1375 silly ADD node_modules/underscore
+1376 silly ADD node_modules/node-opcua-extension-object
+1377 silly ADD node_modules/callbackify
+1378 silly ADD node_modules/@types/underscore
+1379 silly ADD node_modules/@types/once
+1380 silly ADD node_modules/@ster5/global-mutex
+1381 silly ADD node_modules/node-opcua-pki
+1382 silly ADD node_modules/mkdirp
+1383 silly ADD node_modules/env-paths
+1384 silly ADD node_modules/delayed
+1385 silly ADD node_modules/@types/mkdirp
+1386 silly ADD node_modules/node-opcua-guid
+1387 silly ADD node_modules/node-opcua-buffer-utils
+1388 silly ADD node_modules/@types/async
+1389 silly ADD node_modules/xml-writer
+1390 silly ADD node_modules/thenify
+1391 silly ADD node_modules/set-prototype-of
+1392 silly ADD node_modules/node-opcua-xml2json
+1393 silly ADD node_modules/node-opcua-schemas
+1394 silly ADD node_modules/node-opcua-pseudo-session
+1395 silly ADD node_modules/node-opcua-object-registry
+1396 silly ADD node_modules/node-opcua-nodeset-ua
+1397 silly ADD node_modules/node-opcua-date-time
+1398 silly ADD node_modules/node-opcua-client-dynamic-extension-object
+1399 silly ADD node_modules/node-opcua-address-space-base
+1400 silly ADD node_modules/dequeue
+1401 silly ADD node_modules/@types/lodash
+1402 silly ADD node_modules/color-name
+1403 silly ADD node_modules/color-convert
+1404 silly ADD node_modules/supports-color
+1405 silly ADD node_modules/ansi-styles
+1406 silly ADD node_modules/semver
+1407 silly ADD node_modules/node-opcua-vendor-diagnostic
+1408 silly ADD node_modules/node-opcua-variant
+1409 silly ADD node_modules/node-opcua-utils
+1410 silly ADD node_modules/node-opcua-types
+1411 silly ADD node_modules/node-opcua-transport
+1412 silly ADD node_modules/node-opcua-status-code
+1413 silly ADD node_modules/node-opcua-service-write
+1414 silly ADD node_modules/node-opcua-service-translate-browse-path
+1415 silly ADD node_modules/node-opcua-service-subscription
+1416 silly ADD node_modules/node-opcua-service-session
+1417 silly ADD node_modules/node-opcua-service-secure-channel
+1418 silly ADD node_modules/node-opcua-service-register-node
+1419 silly ADD node_modules/node-opcua-service-read
+1420 silly ADD node_modules/node-opcua-service-query
+1421 silly ADD node_modules/node-opcua-service-node-management
+1422 silly ADD node_modules/node-opcua-service-history
+1423 silly ADD node_modules/node-opcua-service-filter
+1424 silly ADD node_modules/node-opcua-service-endpoints
+1425 silly ADD node_modules/node-opcua-service-discovery
+1426 silly ADD node_modules/node-opcua-service-call
+1427 silly ADD node_modules/node-opcua-service-browse
+1428 silly ADD node_modules/node-opcua-server-discovery
+1429 silly ADD node_modules/node-opcua-server
+1430 silly ADD node_modules/node-opcua-secure-channel
+1431 silly ADD node_modules/node-opcua-packet-analyzer
+1432 silly ADD node_modules/node-opcua-numeric-range
+1433 silly ADD node_modules/node-opcua-nodesets
+1434 silly ADD node_modules/node-opcua-nodeid
+1435 silly ADD node_modules/node-opcua-hostname
+1436 silly ADD node_modules/node-opcua-factory
+1437 silly ADD node_modules/node-opcua-enum
+1438 silly ADD node_modules/node-opcua-debug
+1439 silly ADD node_modules/node-opcua-data-value
+1440 silly ADD node_modules/node-opcua-data-model
+1441 silly ADD node_modules/node-opcua-data-access
+1442 silly ADD node_modules/node-opcua-crypto
+1443 silly ADD node_modules/node-opcua-constants
+1444 silly ADD node_modules/node-opcua-common
+1445 silly ADD node_modules/node-opcua-client-proxy
+1446 silly ADD node_modules/node-opcua-client-crawler
+1447 silly ADD node_modules/node-opcua-client
+1448 silly ADD node_modules/node-opcua-certificate-manager
+1449 silly ADD node_modules/node-opcua-binary-stream
+1450 silly ADD node_modules/node-opcua-basic-types
+1451 silly ADD node_modules/node-opcua-assert
+1452 silly ADD node_modules/node-opcua-aggregates
+1453 silly ADD node_modules/node-opcua-address-space-for-conformance-testing
+1454 silly ADD node_modules/node-opcua-address-space
+1455 silly ADD node_modules/chalk
+1456 silly ADD node_modules/callsite
+1457 silly ADD node_modules/vm2
+1458 silly ADD node_modules/source-map-support
+1459 silly ADD node_modules/node-opcua
+1460 silly ADD node_modules/better-assert
+1461 silly ADD node_modules/node-red-contrib-opcua-server
+1462 timing command:install Completed in 21983ms
+1463 verbose exit 0
+1464 timing npm Completed in 22129ms
+1465 info ok
