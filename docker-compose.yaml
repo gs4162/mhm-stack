@@ -11,12 +11,12 @@ services:
       - TZ=Pacific/Auckland
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /opt/portainer:/data
+      - /opt/mhm-stack/portainer:/data
   homeassistant:
     container_name: homeassistant
     image: "ghcr.io/home-assistant/home-assistant:stable"
     volumes:
-      - /opt/homeassistant/config:/config
+      - /opt/mhm-stack/homeassistant/config:/config
       - /etc/localtime:/etc/localtime:ro
  #   devices:
  #    -   /dev/ttyUSB0:/dev/ttyUSB0
@@ -32,9 +32,9 @@ services:
     - TZ=Pacific/Auckland
     restart: always
     volumes:
-      - /opt/mosquitto_data:/mosquitto/data
-      - /opt/mosquitto_data:/mosquitto/log
-      - /opt/mosquitto_data/config:/mosquitto/config
+      - /opt/mhm-stack/mosquitto_data:/mosquitto/data
+      - /opt/mhm-stack/mosquitto_data:/mosquitto/log
+      - /opt/mhm-stack/mosquitto_data/config:/mosquitto/config
     restart: unless-stopped
   node-red:
     image: nodered/node-red:latest
@@ -43,12 +43,12 @@ services:
     ports:
       - "1880:1880"
     volumes:
-      - /opt/node-red-data:/data
+      - /opt/mhm-stack/node-red-data:/data
     restart: unless-stopped
   influxdb:
     image: influxdb:2.1.1
     volumes:
-      - /opt/influxdb-storage:/var/lib/influxdb2:rw
+      - /opt/mhm-stack/influxdb-storage:/var/lib/influxdb2:rw
     env_file:
       - .env
     entrypoint: ["./entrypoint.sh"]
@@ -68,7 +68,7 @@ services:
 #  grafana:
 #    image: grafana/grafana-oss:8.4.3
 #    volumes:
-#      - /opt/grafana-storage:/var/lib/grafana:rw
+#      - /opt/mhm-stack/grafana-storage:/var/lib/grafana:rw
 #    depends_on:
 #      - influxdb
 #    ports:
@@ -79,7 +79,7 @@ services:
     ports:
       - ${tasmoadmin_PORT}:80
     volumes:
-      - /opt/tasmoadmin_data:/data
+      - /opt/mhm-stack/tasmoadmin_data:/data
     restart: always
   mariadb:
     image: linuxserver/mariadb
@@ -93,7 +93,7 @@ services:
       PUID: 1000
       PGID: 1000
     volumes:
-     - /opt/mariadb:/config
+     - /opt/mhm-stack/mariadb:/config
     ports:
       - ${mariadb_PORT}:3306  
     restart: unless-stopped
@@ -104,7 +104,7 @@ services:
     restart: always
     volumes:
       - /etc/localtime:/etc/localtime
-      - /opt/frigate-data/config.yml:/config/config.yml
+      - /opt/mhm-stack/frigate-data/config.yml:/config/config.yml
     ports:
       - ${frigate1_PORT}:5000
       - ${frigate2_PORT}:1935
@@ -113,8 +113,8 @@ services:
 #  tailscale:
 #        container_name: tailscale
 #        volumes:
-#            - /opt/tailscale/var/lib:/var/lib'
-#            - /opt/tailscale/dev/net/tun:/dev/net/tun'
+#            - /opt/mhm-stack/tailscale/var/lib:/var/lib'
+#            - /opt/mhm-stack/tailscale/dev/net/tun:/dev/net/tun'
 #        network_mode: host
 #        privileged: true
 #        image: tailscale/tailscale
@@ -129,14 +129,14 @@ services:
 #      - 80:80/tcp
 #      - 443:443/tcp
 #    volumes:
-#      - /opt/adguard:/opt/adguardhome/work
-#      - /opt/adguard:/opt/adguardhome/conf
+#      - /opt/mhm-stack/adguard:/opt/adguardhome/work
+#      - /opt/mhm-stack/adguard:/opt/adguardhome/conf
 #    restart: unless-stopped
   esphome:
         container_name: esphome
         image: esphome/esphome
         volumes:
-            - /opt/esphome/:/config:rw
+            - /opt/mhm-stack/esphome/:/config:rw
             # Use local time for logging timestamps
             #- /etc/localtime:/etc/localtime:ro
         restart: always
@@ -151,7 +151,7 @@ services:
       - TZ=Europe/London
       - CLI_ARGS= #optional
     volumes:
-      - /opt/duplicati/config>:/config
+      - /opt/mhm-stack/duplicati/config>:/config
       - /opt:/source
     ports:
       - 8200:8200
@@ -173,7 +173,7 @@ services:
       - DOCKER_HUB_USERNAME=USER #optional
       - DOCKER_HUB_PASSWORD=PASS #optional
     volumes:
-      - /opt/kasm:/opt
+      - /opt/mhm-stack/kasm:/opt
       #- /path/to/profiles:/profiles #optional
     ports:
       - 3000:3000
