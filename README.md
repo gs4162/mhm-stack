@@ -5,7 +5,7 @@ List
 
 1. Download Ubuntu
 2. Install Docker & Docker-compose
-3. Pull this code
+3. Pull mhm-stack
 4. Start the containers
 5. Open Portainer
 
