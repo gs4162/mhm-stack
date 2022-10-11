@@ -1,7 +1,5 @@
 # mhm-stack
-mhm-stack
 
-readme.
 
 Step1 create user & password
 Step2: Install docker "https://docs.docker.com/engine/install/ubuntu/"
