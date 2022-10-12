@@ -36,3 +36,14 @@ Step 5.
 ```
 git clone https://github.com/gs4162/mhm-stack.git
 ```
+Step 6.
+
+```
+
+cd mhm-stack/
+
+Step 7.
+
+```
+
+sudo docker-compose up -d
