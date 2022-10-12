@@ -9,7 +9,7 @@ List
 . Start the containers
 . Open Portainer
 
-Step 1. 
+Step 1. Install, Create User, Create Password
 
 ```
 Open "Microsoft Store on your windows PC" Install "Ubuntu 20.04.5 LTS"
