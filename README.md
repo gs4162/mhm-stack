@@ -49,6 +49,10 @@ Step 8. Find IP Address (eth0 ip address example 172.26.229.XXX)
 ip addr
 ```
 Step 9. Open portainer, Set password
-
+```
 http://IP.ADDRESS:9000
-
+```
+Step 10. Change permissions for node-red-data folder
+```
+sudo chown 1000:1000 /opt/mhm-stack/node-red-data/
+```
