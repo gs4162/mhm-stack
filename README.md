@@ -15,7 +15,7 @@ Step 1. Install, Create User, Create Password
 Open "Microsoft Store on your windows PC" Install "Ubuntu 20.04.5 LTS"
 ```
 
-Step 2. (Install docker & docker-compose) 
+Step 2. (Install docker & docker-compose), You can stop at command  "sudo service docker start"
  
 https://docs.docker.com/engine/install/ubuntu/
 
@@ -28,7 +28,7 @@ cd /opt
 Step 4. Pull MHM stack from github 
 
 ```
-git clone https://github.com/gs4162/mhm-stack.git
+sudo git clone https://github.com/gs4162/mhm-stack.git
 ```
 Step 5. Change to the /opt/mhm-stack directory 
 ```
