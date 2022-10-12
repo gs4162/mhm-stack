@@ -42,7 +42,7 @@ sudo docker compose up -d
 Step 7. List containers are running
 
 ```
-sudo docker-compose ps
+sudo docker compose ps
 ```
 Step 8. Find IP Address (eth0 ip address example 172.26.229.XXX)
 ```
