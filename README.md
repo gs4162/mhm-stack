@@ -37,7 +37,7 @@ cd /opt/mhm-stack
 Step 6. Run docker compose configuration
 
 ```
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 Step 7. List containers are running
 
