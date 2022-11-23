@@ -21,6 +21,9 @@ https://docs.docker.com/engine/install/ubuntu/
 Step 3. Change to the /opt directory 
 
 ```
+enable SSH. https://linuxhint.com/enable-use-ssh-ubuntu/
+
+```
 cd /opt
 ```
 Step 4. Pull MHM stack from github 
