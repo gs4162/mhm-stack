@@ -2,7 +2,7 @@
 
 List
 
-. Download Ubuntu
+. Download Ubuntu 
 . Install Docker & Docker-compose
 . Pull mhm-stack
 . Start the containers
@@ -11,7 +11,7 @@ List
 Step 1. Install, Create User, Create Password
 
 ```
-Open "Microsoft Store on your windows PC" Install "Ubuntu 20.04.5 LTS"
+If windows, Open "Microsoft Store on your windows PC" Install "Ubuntu 20.04.5 LTS"
 ```
 
 Step 2. (Install docker & docker-compose), You can stop at command  "sudo service docker start"
