@@ -63,7 +63,10 @@ sudo chmod -R u+rwx /opt/mhm-stack
 
 
 
-## Step 8. Run docker compose configuration
+## Step 8. Open folder, Run docker compose configuration
+```
+cd /opt/mhm-stack
+```
 ```
 sudo docker compose up -d
 ```
