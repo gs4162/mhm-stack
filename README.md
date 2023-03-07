@@ -49,20 +49,19 @@
 
 ## Step 5. Make & Change to the /opt/mhm-stack directory 
 ```
-sudo mkdir /opt/mhm-stack
+cd /opt/
 ```
+## Step 6. Pull MHM stack from github 
 ```
-cd /opt/mhm-stack
+sudo git clone https://github.com/gs4162/mhm-stack.git
 ```
-## step 6. Change permission of the directoy so the current user has full control
+
+## step 7. Change permission of the directoy so the current user has full control
 ```
 sudo chmod -R u+rwx /opt/mhm-stack
 ```
 
-## Step 7. Pull MHM stack from github 
-```
-sudo git clone https://github.com/gs4162/mhm-stack.git
-```
+
 
 ## Step 8. Run docker compose configuration
 ```
