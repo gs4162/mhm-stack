@@ -41,46 +41,43 @@
 
 ## step 4. Install Docker/Docker compose.
 
-https://docs.docker.com/engine/install/ubuntu/
++ https://docs.docker.com/engine/install/ubuntu/
 
 + follow the post install.
+  
++ https://docs.docker.com/engine/install/linux-postinstall/
 
-https://docs.docker.com/engine/install/linux-postinstall/
-## step 5. Change to the /opt directory 
-
-```
-cd /opt
-```
-## step 6. Change permission of the directoy so the current user has full control
-```
-chmod -R u+rwx /opt/mhm-stack
-```
-## Step 7.Make & Change to the /opt/mhm-stack directory 
+## Step 5. Make & Change to the /opt/mhm-stack directory 
 ```
 sudo mkdir /opt/mhm-stack
 ```
 ```
 cd /opt/mhm-stack
 ```
-## Step 8. Pull MHM stack from github 
+## step 6. Change permission of the directoy so the current user has full control
+```
+sudo chmod -R u+rwx /opt/mhm-stack
+```
+
+## Step 7. Pull MHM stack from github 
 ```
 sudo git clone https://github.com/gs4162/mhm-stack.git
 ```
 
-## Step 9. Run docker compose configuration
+## Step 8. Run docker compose configuration
 ```
 sudo docker compose up -d
 ```
-## Step 10. List containers are running
+## Step 9. List containers are running
 ```
 sudo docker compose ps
 ```
 
-## Step 11.. Find IP Address (eth0 ip address example 172.26.229.XXX)
+## Step 10.. Find IP Address (eth0 ip address example 172.26.229.XXX)
 ```
 ip addr
 ```
-## Step 12.. Open portainer, Set password
+## Step 11.. Open portainer, Set password
 ```
 http://IP.ADDRESS:9000
 ```
