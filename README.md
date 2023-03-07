@@ -67,19 +67,35 @@ sudo chmod -R u+rwx /opt/mhm-stack
 ```
 cd /opt/mhm-stack
 ```
+## Step 9. Make current user own nodered folder (Replace user with your created user)
+```
+sudo chown -R user:user /opt
+
+```
+
 ```
 sudo docker compose up -d
 ```
-## Step 9. List containers are running
+## Step 10. List containers are running
 ```
 sudo docker compose ps
 ```
 
-## Step 10.. Find IP Address (eth0 ip address example 172.26.229.XXX)
+## Step 11.. Find IP Address (eth0 ip address example 172.26.229.XXX)
 ```
 ip addr
 ```
-## Step 11.. Open portainer, Set password
+## Step 12.. Open portainer, Set password
 ```
 http://IP.ADDRESS:9000
+```
+## Step 13.. Run the entrypoint.sh & update script
+```
+cd /opt/mhm-stack
+```
+```
+sudo /.update.sh 
+```
+```
+sudo /.entrypoint.sh 
 ```
