@@ -63,18 +63,18 @@ services:
     ports:
       - ${GRAFANA_PORT}:3000
     restart: unless-stopped
-  frigate:
-    container_name: frigate
-    image: blakeblackshear/frigate:stable-amd64
-    restart: always
-    volumes:
-      - /etc/localtime:/etc/localtime
-      - /opt/mhm-stack/frigate-data/config.yml:/config/config.yml
-    ports:
-      - ${frigate1_PORT}:5000
-      - ${frigate2_PORT}:1935
-    environment:
-      FRIGATE_RTSP_PASSWORD: "${MHM_frigate_PASSWORD}" 
+#  frigate:
+#    container_name: frigate
+#    image: blakeblackshear/frigate:stable-amd64
+#    restart: always
+#    volumes:
+#      - /etc/localtime:/etc/localtime
+#      - /opt/mhm-stack/frigate-data/config.yml:/config/config.yml
+#    ports:
+#      - ${frigate1_PORT}:5000
+#      - ${frigate2_PORT}:1935
+#    environment:
+#      FRIGATE_RTSP_PASSWORD: "${MHM_frigate_PASSWORD}" 
   duplicati:
     image: lscr.io/linuxserver/duplicati:latest
     container_name: duplicati
@@ -84,7 +84,7 @@ services:
       - TZ=Europe/London
       - CLI_ARGS= #optional
     volumes:
-      - /opt/mhm-stack/duplicati/config>:/config
+      - /opt/mhm-stack/duplicati/config:/config
       - /opt:/source
     ports:
       - 8200:8200
