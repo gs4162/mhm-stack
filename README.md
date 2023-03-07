@@ -61,8 +61,12 @@ chmod -R u+rwx /opt/mhm-stack
 ```
 sudo git clone https://github.com/gs4162/mhm-stack.git
 ```
-## Step 8. Change to the /opt/mhm-stack directory 
+## Step 8.Make & Change to the /opt/mhm-stack directory 
 ```
+sudo mkdir /opt/mhm-stack/opt/mhm-stack
+```
+```
+
 cd /opt/mhm-stack
 ```
 ## Step 9. Run docker compose configuration
