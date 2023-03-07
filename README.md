@@ -63,7 +63,7 @@ sudo git clone https://github.com/gs4162/mhm-stack.git
 ```
 ## Step 8.Make & Change to the /opt/mhm-stack directory 
 ```
-sudo mkdir /opt/mhm-stack/opt/mhm-stack
+sudo mkdir /opt/mhm-stack
 ```
 ```
 
