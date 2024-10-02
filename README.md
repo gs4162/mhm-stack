@@ -1,101 +1,112 @@
-# MHM-stack 
+
+---
+
+# MHM-stack (For Local Testing Only - Not for Production)
+
+**Important: This stack is intended for local testing purposes only. The `.env` file contains default tokens and passwords that must be changed before production use.**
 
 ## Steps
 
-+  Download Ubuntu / Connent via SSH (Putty on windows)
++  Download Ubuntu / Connect via SSH (Putty on Windows)
 +  Setup remote access 
 +  Install Docker & Docker-compose
 + Pull mhm-stack
 + Start the containers
 + Open Portainer
 
-##  Step 1. Get ubuntu 20.04 lts running(Enable SSH during install).
+## Step 1. Get Ubuntu 20.04 LTS running (Enable SSH during install).
 
-
-+ If windows, Open "Microsoft Store on your windows PC" Install "Ubuntu 20.04.5 LTS", Fresh install visit below link
++ If on Windows, open "Microsoft Store" on your Windows PC and install "Ubuntu 20.04.5 LTS", or visit the link below for a fresh install:
 
   https://ubuntu.com/download/server
 
-## Step 2. Connect via ssh.
+## Step 2. Connect via SSH.
 
-+ In teminal go to.
++ In terminal, use the following command to connect:
     ```
     ssh user@IPADDRESS
     ``` 
-+  If unsuccessful ensure Open-SSH is   installed.
++  If unsuccessful, ensure OpenSSH is installed:
     ```
     ssh -V
     ```
-+   If in not installed visit.
-
++   If not installed, visit:
 
     https://linuxhint.com/enable-use-ssh-ubuntu/
     
-## Step 3. Setup tailscale for remote access.
+## Step 3. Setup Tailscale for remote access.
 
     https://tailscale.com/kb/1039/install-ubuntu-2004/
 
-+ Enable subroute for IP range.
++ Enable subnet routing for your IP range:
 
     https://tailscale.com/kb/1019/subnets/
 
-## step 4. Install Docker/Docker compose.
+## Step 4. Install Docker and Docker Compose.
 
-+ https://docs.docker.com/engine/install/ubuntu/
++ Follow the installation guide:
 
-+ follow the post install.
-  
-+ https://docs.docker.com/engine/install/linux-postinstall/
+    https://docs.docker.com/engine/install/ubuntu/
 
-## Step 5. Make & Change to the /opt/mhm-stack directory 
++ Complete post-install steps:
+
+    https://docs.docker.com/engine/install/linux-postinstall/
+
+## Step 5. Make and change to the /opt/mhm-stack directory:
 ```
 cd /opt/
 ```
-## Step 6. Pull MHM stack from github 
+## Step 6. Pull MHM stack from GitHub:
 ```
 sudo git clone https://github.com/gs4162/mhm-stack.git
 ```
 
-## step 7. Change permission of the directoy so the current user has full control
+## Step 7. Change directory permissions so the current user has full control:
 ```
 sudo chmod -R u+rwx /opt/mhm-stack
 ```
 
-
-
-## Step 8. Open folder, Run docker compose configuration
+## Step 8. Open the folder and run Docker Compose configuration:
 ```
 cd /opt/mhm-stack
 ```
-## Step 9. Make current user own nodered folder (Replace user with your created user)
+## Step 9. Make the current user the owner of the Node-RED folder (replace 'user' with your username):
 ```
 sudo chown -R user:user /opt
-
 ```
 
 ```
 sudo docker compose up -d
 ```
-## Step 10. List containers are running
+
+## Step 10. Verify containers are running:
 ```
 sudo docker compose ps
 ```
 
-## Step 11.. Find IP Address (eth0 ip address example 172.26.229.XXX)
+## Step 11. Find IP Address (e.g., eth0 IP address like 172.26.229.XXX):
 ```
 ip addr
 ```
-## Step 12.. Open portainer, Set password
+
+## Step 12. Open Portainer and set the password:
 ```
 http://IP.ADDRESS:9000
 ```
-## Step 13.. Run the entrypoint.sh & update script
+
+## Step 13. Run the entrypoint and update scripts:
 ```
 cd /opt/mhm-stack
 ```
+
 ```
-sudo /.update.sh 
+sudo ./update.sh 
 ```
+
 ```
-sudo /.entrypoint.sh 
+sudo ./entrypoint.sh 
 ```
+
+---
+
+Let me know if you'd like any further modifications!
